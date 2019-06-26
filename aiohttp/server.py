@@ -17,10 +17,6 @@ from dotenv import load_dotenv
 load_dotenv('/aiohttp/main_config/.env')
 import requests
 
-
-TG_API_TOKEN = os.getenv('TG_API_TOKEN')
-
-
 # TODO
 # Проверка на зацикленность - вроде все работает
 # возращать тип ошибки и сообщение и отпралять в самом конце а не там где она вылазит - это есть
