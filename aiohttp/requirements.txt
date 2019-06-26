@@ -12,3 +12,4 @@ aiohttp_session
 cryptography
 blockchain
 coinbase
+python-decouple

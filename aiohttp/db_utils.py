@@ -1,11 +1,13 @@
 import asyncpg
 from datetime import datetime, timedelta
 pool = None
+from decouple import config
 
+POSTGRES_PASSWORD = config('POSTGRES_PASSWORD')
 
 async def init_db():
     global pool
-    pool = await asyncpg.create_pool("postgresql://postgres@db:5432/postgres")
+    pool = await asyncpg.create_pool(f"postgresql://postgres:{POSTGRES_PASSWORD}@db:5432/postgres")
     # await create_tables()
 
 

@@ -753,8 +753,6 @@ async def tg_webhook(request):
     return web.Response(text="OK")
 
 
-tg_bot = Bot(token=TG_API_TOKEN)
-
 loop = asyncio.get_event_loop()
 
 app = web.Application(loop=loop)

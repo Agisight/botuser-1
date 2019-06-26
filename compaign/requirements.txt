@@ -9,3 +9,4 @@ asyncio
 aiohttp
 asyncpg
 cryptography
+python-decouple
