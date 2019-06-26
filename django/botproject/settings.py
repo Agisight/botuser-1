@@ -97,7 +97,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'botproject.urls'
 ROOT_HOSTCONF = 'botproject.hosts'
 DEFAULT_HOST = "www"
-PARENT_HOST = 'whatsbot.online'
+PARENT_HOST = 'inbot24.ru'
 
 # SESSION_COOKIE_DOMAIN = ".whatsbot.online"
 
