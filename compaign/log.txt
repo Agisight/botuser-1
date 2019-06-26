@@ -1,0 +1,216 @@
+ERROR:root:check_compaign <class 'asyncpg.exceptions.CannotConnectNowError'> compaign.py 63 
+ the database system is starting up
+ERROR:root:send_file_message <class 'aiohttp.client_exceptions.ClientConnectorError'> compaign.py 44 
+ Cannot connect to host eu18.chat-api.com:443 ssl:None [Connect call failed ('35.228.192.29', 443)]
+ERROR:root:send_file_message <class 'aiohttp.client_exceptions.ClientConnectorError'> compaign.py 44 
+ Cannot connect to host eu18.chat-api.com:443 ssl:None [Connect call failed ('35.228.192.29', 443)]
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:send_text_message <class 'aiohttp.client_exceptions.ServerDisconnectedError'> compaign.py 21 
+ None
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:make_compaign <class 'KeyError'> compaign.py 145 
+ 'next_step'
+ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 80 
+ relation "bot_compaign" does not exist
+ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 80 
+ relation "bot_compaign" does not exist
+ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 80 
+ relation "bot_compaign" does not exist
+ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 80 
+ relation "bot_compaign" does not exist

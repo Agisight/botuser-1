@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Robokassa</title>
+  </head>
+  <body onload="myFunction()">
+
+<div class="container">
+
+
+    <form id="robokassa" action='https://auth.robokassa.ru/Merchant/Index.aspx' method=POST>
+       <input type=hidden name=MrchLogin value='{{ mrh_login }}'>
+       <input type=hidden name=OutSum value='{{ out_summ }}'>
+       <input type=hidden name=InvId value='{{ inv_id }}'>
+       <input type=hidden name=Desc value='{{ desc }}'>
+       <input type=hidden name=SignatureValue value='{{ signature }}'>
+       <input type=hidden name=Shp_user value='{{ Shp_user }}'>
+       <input type=hidden name=Shp_plan value='{{ Shp_plan }}'>
+       <input type=submit value='Оплатить'>
+    </form>
+
+
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById('robokassa').submit();
+}
+</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  </body>
+</html>
+
+
+
+
+
+

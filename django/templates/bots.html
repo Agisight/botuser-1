@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Bot</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="{% static "css/main.min.css" %}">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<div class="container">
+		<main class="list-main">
+			<h2 class="list-title">Ваши боты</h2>
+			<ul class="list-ul">
+				<li><a href="http://209.250.238.153/accounts/bots/36/">Awesome bot</a></li>
+				<li><a href="empty-bot.html">Average bot</a></li>
+				<li><a href="empty-bot.html">Another bot</a></li>
+			</ul>
+			<button class="list-new" id="nb-create">Создать</button>
+		</main>
+	</div>
+	<div class="nb" id="nb" style="display: none">
+		<div class="nb-content">
+			<div class="nb-header">
+				<div>Создать бота</div>
+				<i class="material-icons" id="nb-close">close</i>
+			</div>
+			<form class="nb-form">
+				<input type="text" name="name" placeholder="Название бота">
+				<button type="submit">Создать</button>
+			</form>
+		</div>
+	</div>
+	<script src="{% static "js/scripts.min.js" %}"></script>
+
+</body>
+</html>

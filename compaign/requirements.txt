@@ -1,0 +1,11 @@
+python-dotenv
+psycopg2
+telethon
+schedule
+requests
+pytelegrambotapi
+aiogram
+asyncio
+aiohttp
+asyncpg
+cryptography

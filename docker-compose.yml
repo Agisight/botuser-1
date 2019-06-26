@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+
+    nginx:
+        restart: always
+        build: ./nginx
+        depends_on:
+            - django
+    django:
+        restart: always
+        build: ./django
+        depends_on:
+            - db
+    aiohttp:
+        restart: always
+        build: ./aiohttp
+        depends_on:
+            - db
+    compaign:
+        restart: always
+        build: ./compaign
+        depends_on:
+            - db
+    db:   
+        restart: always
+        image: postgres
+    redis:
+        image: "redis:alpine"
+
