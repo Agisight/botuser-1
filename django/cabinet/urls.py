@@ -1,8 +1,10 @@
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 
 from .views import *
 
 urlpatterns = [
+
+    path('api/bot_list/', UserBotList.as_view(), name='bot-list'),
 
     # path('create_bot/', create_bot, name='create_bot'),
     # path('get_bot_list/', get_bot_list, name='get_bot_list'),
@@ -41,5 +43,9 @@ urlpatterns = [
 ]
 
 
-
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ]
 

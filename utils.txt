@@ -1,0 +1,2 @@
+ssh -R mytesetbot1.serveo.net:80:192.168.99.100:80 -R cabinet.serveo.net:80:192.168.99.100:80 serveo.net
+curl -F "url=https://mytesetbot1.serveo.net/bot_webhook/" -F "certificate=./ssl.crt" "https://api.telegram.org/bot844539201:AAHIpYQEiXsd-d41Notw4pCb-TQk2Dg8Ygg/setwebhook"
