@@ -98,7 +98,6 @@ class RegisterUser(APIView):
             return HttpResponse(json.dumps(resp), content_type="application/json", status=400)
 
 
-
 class ForgotPassword(APIView):
     # permission_classes = (IsAuthenticated,)
     http_method_names = ['post']
@@ -234,59 +233,3 @@ class ChangePassword(APIView):
 
             data = {"status": "error"}
             return Response(data, status=400)
-
-
-
-@csrf_exempt
-def login_view(request):
-
-    if request.user.is_authenticated:
-
-        if request.user.is_superuser:
-            logout(request)
-            return redirect('accounts:login')
-
-        return redirect(reverse('bots', host='app'))
-
-    if request.method == 'POST':
-
-        try:
-            print(request.POST)
-
-            username = request.POST.get("username")
-            password = request.POST.get("password")
-
-            profile = Profile.objects.get(login=username)
-
-            username = f"user_{profile.id}"
-
-            user = authenticate(username=username, password=password)
-
-            print(user)
-            print(username, password)
-
-            if user:
-                login(request, user)
-
-                return redirect(reverse('bots', host='app'))
-
-                #return redirect('bots')
-            #else:
-                # Messages.add_message(request, Messages.ERROR, _('Неправильный email или пароль. Попробуйте еще раз.'))
-                #return redirect('login')
-
-        except Exception as e:
-            print(e)
-
-    form_login = AuthenticationForm()
-
-    return render(request, 'login.html', {"form_login": form_login})
-
-
-def logout_view(request):
-    logout(request)
-    return redirect('accounts:login')
-
-
-def index_view(request):
-    return HttpResponse("Landing")
