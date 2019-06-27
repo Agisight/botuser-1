@@ -119,21 +119,21 @@ class ForgotPassword(APIView):
                 user = None
 
             if user:
-                link = 'http://176.53.160.93/change_password/' + urlsafe_base64_encode(force_bytes(user.pk)).decode("utf-8") \
+                link = 'http://inbot24.ru/change_password/' + urlsafe_base64_encode(force_bytes(user.pk)).decode("utf-8") \
                        + '/' + default_token_generator.make_token(user)
 
-                r = requests.post("https://api.mailgun.net/v3/mail.botobmen.ru/messages",
-                                  auth=("api", "bc828b96d0f3f50dd96eb2791d2a4eec-dc5f81da-19a72014"),
-                                  data={"from": "BOTOBMEN.RU <info@mail.botobmen.ru>", "to": [email],
+                r = requests.post("https://api.mailgun.net/v3/mail.inbot24.ru/messages",
+                                  auth=("api", "e58cc2074156d23ba5af680252cfb3dc-2b778fc3-9aff387d"),
+                                  data={"from": "INBOT24.RU <info@mail.inbot24.ru>", "to": [email],
                                         "subject": "Восстановление пароля", "text": "Перейдите по ссылке: %s" % link})
                 print(r.text)
 
-                data = {"status": "OK"}
-                return Response(data)
+            data = {"status": "OK"}
+            return Response(data)
 
-            else:
-                data = {"error": "Пользователь с таким email не зарегистрирован."}
-                return Response(data, status=400)
+            # else:
+            #     data = {"error": "Пользователь с таким email не зарегистрирован."}
+            #     return Response(data, status=400)
 
 
         except Exception as e:
