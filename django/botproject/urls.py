@@ -18,8 +18,6 @@ from django.urls import path, include
 from decouple import config
 from django.conf import settings
 
-from accounts.views import index_view
-
 from rest_framework_simplejwt import views as jwt_views
 
 admin.site.index_title = config("INDEX_TITLE")
@@ -28,7 +26,7 @@ admin.site.site_header = config("SITE_HEADER")
 
 urlpatterns = [
 
-    path('', index_view, name='index_view'),
+    # path('', index_view, name='index_view'),
 
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
