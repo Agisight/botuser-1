@@ -76,7 +76,7 @@ class Bot(models.Model):
 
                     bot = telebot.TeleBot(token=self.token)
                     try:
-                        res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
+                        res = bot.set_webhook(url=f"https://tgbot.inbot24.ru/bot_webhook/{self.token}/",
                                               certificate=open('/ssl/webhook_cert.pem'))
                         if res:
                             self.status = 'on'
