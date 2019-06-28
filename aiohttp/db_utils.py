@@ -11,16 +11,16 @@ async def init_db():
     # await create_tables()
 
 
-async def add_user(bot_id, chat_id, name, phone, step):
+async def add_user(bot_id, chat_id, first_name, last_name, username):
     async with pool.acquire() as conn:
 
         query = "INSERT INTO bot_botuser " \
-                "(bot_id, chat_id, name, phone, step, variables, date_in) " \
+                "(bot_id, chat_id, first_name, last_name, username, step, date_in) " \
                 "VALUES " \
-                "($1, $2, $3, $4, $5, '{}', $6) " \
+                "($1, $2, $3, $4, $5, $6, $7) " \
                 "RETURNING *"
 
-        result = await conn.fetch(query, bot_id, chat_id, name, phone, step, datetime.today())
+        result = await conn.fetch(query, bot_id, chat_id, first_name, last_name, username, datetime.today())
 
         if result:
             return result[0]

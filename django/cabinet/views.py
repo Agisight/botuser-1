@@ -18,7 +18,7 @@ from django.shortcuts import render, redirect#, reverse
 from django_hosts.resolvers import reverse
 from django.contrib.auth import get_user_model
 
-from .serializers import BotSerializer
+from .serializers import *
 
 from django.contrib.auth import authenticate, login, logout
 import xlwt
@@ -49,7 +49,7 @@ from django.core.paginator import Paginator
 from django.db.models import Count, Min, Sum, Avg
 
 from rest_framework import generics
-
+from rest_framework import status
 
 import logging
 logging.basicConfig(filename="/botproject/log.txt", level=logging.ERROR)
@@ -74,21 +74,67 @@ def isint(s):
     except ValueError:
         return False
 
-
 def random_id():
   rid = ''
   for x in range(8): rid += random.choice(string.ascii_letters + string.digits)
   return rid
 
 
-class UserBotList(generics.ListAPIView): # class UserBotList(generics.ListCreateAPIView): #
+# TODO
+# add permission class bot contains user
+
+#class UserBotList(generics.ListAPIView): #
+class BotListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
 
     def list(self, request):
         # Note the use of `get_queryset()` instead of `self.queryset`
         queryset = Bot.objects.filter(user=request.user)
-        serializer = BotSerializer(queryset, many=True)
+        serializer = BotListSerializer(queryset, many=True)
         return Response(serializer.data)
+
+    def create(self, request):
+        serializer = BotCreateSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdateBotView(generics.UpdateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = BotUpdateSerializer
+
+    # def update(self, request, id):
+    #     instance = self.get_object(id)
+    #     serializer = BotUpdateSerializer(instance, data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response(serializer.data)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class SetWebhookView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request, id):
+
+        bot = Bot.objects.get(id=id)
+
+        if self.token:
+
+            bot = telebot.TeleBot(token=self.token)
+            try:
+                res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
+                                      certificate=f"/ssl/webhook_cert.pem")
+                print(res)
+                self.last_log_set_webhook = json.dumps(res)
+            except Exception as e:
+                self.last_log_set_webhook = str(e)
+
+            return Response({"status": "OK"})
+
+        return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
 
 # class BotList(APIView):
@@ -535,94 +581,94 @@ class UserBotList(generics.ListAPIView): # class UserBotList(generics.ListCreate
 #         logging.error("get_bot_orders {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 #
 #         return JsonResponse({"error": "some error"})
-#
-#
-# @csrf_exempt
-# def upload_photo(request, bot_id):
-#
-#     if not request.user.is_authenticated:
-#         return redirect(reverse('accounts:login', host='www'))
-#
-#     if request.user.is_superuser:
-#         logout(request)
-#         return redirect(reverse('accounts:login', host='www'))
-#
-#     try:
-#
-#         if request.method != 'POST':
-#             return HttpResponse(status=415)
-#
-#         f = request.FILES['image']
-#
-#         image_bot_path = f"./media/upload_photos/{bot_id}"
-#
-#         if not os.path.exists(image_bot_path):
-#             os.makedirs(image_bot_path)
-#
-#         f_name = f"{int(time() * 100000000)}_{str(f)}"
-#
-#         f_path = f"{image_bot_path}/{f_name}"
-#
-#         with open(f_path, 'wb+') as destination:
-#             for chunk in f.chunks():
-#                 destination.write(chunk)
-#
-#         response = {"url": f"https://www.whatsbot.online/media/upload_photos/{bot_id}/{f_name}"}
-#
-#         return JsonResponse(response)
-#
-#     except Exception as e:
-#
-#         exc_type, exc_obj, exc_tb = sys.exc_info()
-#         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-#         logging.error("upload_photo {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-#
-#         return HttpResponse("some error")
-#
-#
-# @csrf_exempt
-# def upload_file(request, bot_id):
-#
-#     if not request.user.is_authenticated:
-#         return redirect(reverse('accounts:login', host='www'))
-#
-#     if request.user.is_superuser:
-#         logout(request)
-#         return redirect(reverse('accounts:login', host='www'))
-#
-#     try:
-#
-#         if request.method != 'POST':
-#             return HttpResponse(status=415)
-#
-#         f = request.FILES['file']
-#
-#         image_bot_path = f"./media/upload_files/{bot_id}"
-#
-#         if not os.path.exists(image_bot_path):
-#             os.makedirs(image_bot_path)
-#
-#         f_name = f"{int(time() * 100000000)}_{str(f)}"
-#
-#         f_path = f"{image_bot_path}/{f_name}"
-#
-#         with open(f_path, 'wb+') as destination:
-#             for chunk in f.chunks():
-#                 destination.write(chunk)
-#
-#         response = {"url": f"https://www.whatsbot.online/media/upload_files/{bot_id}/{f_name}"}
-#
-#         return JsonResponse(response)
-#
-#     except Exception as e:
-#
-#         exc_type, exc_obj, exc_tb = sys.exc_info()
-#         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-#         logging.error("upload_files {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-#
-#         return HttpResponse("some error")
-#
-#
+
+
+#@csrf_exempt
+def upload_photo(request, bot_id):
+
+    if not request.user.is_authenticated:
+        return redirect(reverse('accounts:login', host='www'))
+
+    if request.user.is_superuser:
+        logout(request)
+        return redirect(reverse('accounts:login', host='www'))
+
+    try:
+
+        if request.method != 'POST':
+            return HttpResponse(status=415)
+
+        f = request.FILES['image']
+
+        image_bot_path = f"./media/upload_photos/{bot_id}"
+
+        if not os.path.exists(image_bot_path):
+            os.makedirs(image_bot_path)
+
+        f_name = f"{int(time() * 100000000)}_{str(f)}"
+
+        f_path = f"{image_bot_path}/{f_name}"
+
+        with open(f_path, 'wb+') as destination:
+            for chunk in f.chunks():
+                destination.write(chunk)
+
+        response = {"url": f"https://inbot24.ru/media/upload_photos/{bot_id}/{f_name}"}
+
+        return JsonResponse(response)
+
+    except Exception as e:
+
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        logging.error("upload_photo {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+        return HttpResponse("some error")
+
+
+#@csrf_exempt
+def upload_file(request, bot_id):
+
+    if not request.user.is_authenticated:
+        return redirect(reverse('accounts:login', host='www'))
+
+    if request.user.is_superuser:
+        logout(request)
+        return redirect(reverse('accounts:login', host='www'))
+
+    try:
+
+        if request.method != 'POST':
+            return HttpResponse(status=415)
+
+        f = request.FILES['file']
+
+        image_bot_path = f"./media/upload_files/{bot_id}"
+
+        if not os.path.exists(image_bot_path):
+            os.makedirs(image_bot_path)
+
+        f_name = f"{int(time() * 100000000)}_{str(f)}"
+
+        f_path = f"{image_bot_path}/{f_name}"
+
+        with open(f_path, 'wb+') as destination:
+            for chunk in f.chunks():
+                destination.write(chunk)
+
+        response = {"url": f"https://inbot24.ru/media/upload_files/{bot_id}/{f_name}"}
+
+        return JsonResponse(response)
+
+    except Exception as e:
+
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        logging.error("upload_files {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+        return HttpResponse("some error")
+
+
 # def get_qr_code(request, bot_id):
 #
 #     if not request.user.is_authenticated:

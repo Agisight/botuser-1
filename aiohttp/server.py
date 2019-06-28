@@ -7,8 +7,6 @@ import json
 from datetime import datetime, timedelta
 from aiogram import Bot
 import re
-from amocrm_utils import *
-from b24_utils import *
 
 import logging
 logging.basicConfig(filename="/aiohttp/log.txt", level=logging.ERROR)
@@ -98,6 +96,33 @@ async def order_notify(bot, user, order_text):
         print(exc_type, fname, exc_tb.tb_lineno)
         print(str(e))
         logging.error("order_notify {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+
+async def send_message(bot, user, mes):
+
+    try:
+
+        tg_bot = Bot(token=bot['token'])
+
+        if mes['type'] == "text":
+            answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+        elif mes['type'] == "photo":
+            answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+        elif mes['type'] == "video":
+            answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+
+    except Exception as e:
+
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        print("sys.exc_info() : ", sys.exc_info())
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+        print(str(e))
+        logging.error("send_message {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+    finally:
+
+        await add_mes_log(bot['id'], user['id'], "out", json.dumps(mes), json.dumps(answer_tg_bot))
 
 
 def find_screen(screen_id, data):
@@ -494,99 +519,58 @@ async def handle_first_message(bot, user):
         data = json.loads(bot['data'])
 
         if not data:
-            return None, "ERROR", "Ошибка! Бот пустой. Исправьте это и напишите Старт"
+            return None, "ERROR", "Ошибка! Бот пустой. Напишите /start"
 
         for column in data:
             if column:
                 break
         else:
-            return None, "ERROR", "Ошибка! Бот пустой. Исправьте это и напишите Старт"
+            return None, "ERROR", "Ошибка! Бот пустой. Напишите /start"
 
         screen = column[0]
 
         if not screen['elements']:
-            return None, "ERROR", "Ошибка! Стартовый экран пустой. Исправьте это и напишите Старт"
+            return None, "ERROR", "Ошибка! Стартовый экран пустой. Исправьте это и напишите /start"
 
-        if screen['elements'][0]['type'] == 'order':
-            return None, "ERROR", "Ошибка! Элемент Заявка не может стоять первым элементом на стартовом экране. Исправьте это и напишите Старт"
-
-        if screen['elements'][0]['type'] == 'rewind':
-            return None, "ERROR", "Ошибка! Элемент Перемотка не может стоять первым элементом на стартовом экране. Исправьте это и напишите Старт"
+        # if screen['elements'][0]['type'] == 'order':
+        #     return None, "ERROR", "Ошибка! Элемент Заявка не может стоять первым элементом на стартовом экране. Исправьте это и напишите Старт"
+        #
+        # if screen['elements'][0]['type'] == 'rewind':
+        #     return None, "ERROR", "Ошибка! Элемент Перемотка не может стоять первым элементом на стартовом экране. Исправьте это и напишите Старт"
 
         is_loop_check = screen['id'] + "|"
 
         for element in screen['elements']:
 
+            next_step = f"{screen['id']}|{element['id']}"
+
             if element['type'] == 'menu':
 
-                mes = element['descr']
-
-                if mes:
-                    await send_message(bot, user, mes)
-
-                return f"{screen['id']}|{element['id']}", "SUCCESS", None
-
-            elif element['type'] == 'rewind':
-
-                next_screen_id = element['value']
-                return await handle_next_screen(bot, user, next_screen_id, is_loop_check)
-
-            elif element['type'] == 'pause':
-
-                await asyncio.sleep(element['value'])
-
-            elif element['type'] == 'input':
-
-                mes = element['descr']
-
-                if element['variableType'] == 'date':
-                    mes = mes.replace("{format}", get_date_format())
-                elif element['variableType'] == 'time':
-                    mes = mes.replace("{format}", "15:00")
+                text = element['descr']
+                mes = {"type": "text",
+                       "text": text}
 
                 await send_message(bot, user, mes)
 
-                return f"{screen}|{element['id']}", "SUCCESS", None
+                return next_step, None
 
             elif element['type'] == 'text':
 
-                mes = element['value']
+                text = element['value']
+                mes = {"type": "text",
+                       "text": text}
 
                 await send_message(bot, user, mes)
-
-            elif element['type'] == 'geo':
-
-                latitude = element['value']['latitude']
-                longitude = element['value']['longitude']
-                address = element['value']['descr']
-                await send_location(bot, user, latitude, longitude, address)
-
-            elif element['type'] == 'contact':
-
-                contact_id = element['value'] + "@c.us"
-
-                await send_contact(bot, user, contact_id)
 
             elif element['type'] == 'image':
 
                 await send_file(bot, user, element['value'], get_filename(element['value']), element['descr'])
 
-            elif element['type'] == 'file':
+            elif element['type'] == 'video':
 
                 await send_file(bot, user, element['value'], get_filename(element['value']))
 
-            elif element['type'] == 'order':
-
-                order_text = element['value']['order']
-                mes = element['value']['response']
-
-                await send_message(bot, user, mes)
-
-                await create_order(bot['id'], user['id'], order_text)
-
-                await order_notify(bot, user, order_text)
-
-        return f"{screen['id']}|{element['id']}", "SUCCESS", None
+        return next_step, None
 
     except Exception as e:
         exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -600,102 +584,83 @@ async def handle_first_message(bot, user):
 async def webhook(request):
     try:
 
-        bot_id = int(request.match_info['bot_id'])
+        bot_token = request.match_info['bot_token']
 
-        bot = await get_bot(bot_id)
+        bot = await get_bot(bot_token)
 
         # print(bot)
 
         # ---- проверка доступа ----
-        if bot['podpiska_do'] < datetime.today().date():
-            return web.Response(text="OK")
-
-        if not bot['is_active']:
-            return web.Response(text="OK")
-
-        if not bot['is_ready_to_use']:
-            return web.Response(text="OK")
-
-        if not bot['profile_is_active']:
-            return web.Response(text="OK")
-
-        if bot['partner_id']:
-            if bot['partner_podpiska_do'] < datetime.today().date():
-                return web.Response(text="OK")
-
-            if not bot['partner_is_active']:
-                return web.Response(text="OK")
+        # if bot['podpiska_do'] < datetime.today().date():
+        #     return web.Response(text="OK")
+        #
+        # if not bot['is_active']:
+        #     return web.Response(text="OK")
         # --------------------------
 
         update = await request.json()
 
-        if 'ack' in update:
-            return web.Response(text="OK")
-
         print(update)
 
-        #for message in reversed(update["messages"]):
-        for message in update["messages"][0:1]:
+        text = None
+        chat_id = None
 
-            if message["fromMe"]:
-                return web.Response(text="OK")
+        if 'message' in update:
 
-            if "@g.us" in message["chatId"]:
-                return web.Response(text="OK")
+            username = update['message']['from'].get('username')
+            first_name = update['message']['from'].get('first_name')
+            last_name = update['message']['from'].get('last_name')
 
-            if 'senderName' in message:
-                name = message['senderName']
-            else:
-                name = "Имени нет"
-
-            chat_id = message["author"]
-            text = message["body"]
-
-            user = await get_user(bot_id, chat_id)
-
-            if not user:
-
-                user = await add_user(bot_id, chat_id, name, chat_id[:-5], None)
-
-                await add_mes_log(bot_id, user['id'], "in", json.dumps(update))
-
-                next_step, status, mes = await handle_first_message(bot, user)
-
-                if next_step:
-                    await update_user(bot_id, chat_id, step=next_step)
-
-                if status == "ERROR":
-                    await send_message(bot, user, mes)
-
-                # Интеграция CRM
-                await amocrm(bot, name, chat_id[:-5])
-                await bitrix24(bot, name, chat_id[:-5])
-
-                return web.Response(text="OK")
-
-            # Логирование вебхука #
-            await add_mes_log(bot_id, user['id'], "in", json.dumps(update))
-            #
-
-            if text.lower() in [x.strip().lower() for x in bot['text_start'].split('|') if x]: # == "старт":
-
-                next_step, status, mes = await handle_first_message(bot, user)
-
-                if status == "ERROR":
-                    await send_message(bot, user, mes)
-                if next_step:
-                    await update_user(bot_id, chat_id, step=next_step)
+            if 'text' in update['message']:
+                text = update['message']['text']
+                chat_id = update["message"]["chat"]["id"]
 
             else:
+                return web.Response(text="OK")
 
-                next_step, status, mes = await handle_current_step(bot, user, text)
-                if status == "ERROR":
+        else:
+            return web.Response(text="OK")
+
+        user = await get_user(bot['id'], chat_id)
+
+        # Логирование вебхука
+        await add_mes_log(bot['id'], user['id'], "in", json.dumps(update))
+
+        if not user:
+
+            user = await add_user(bot['id'], chat_id, first_name, last_name, username)
+
+            next_step, status, mes = await handle_first_message(bot, user)
+
+            if next_step:
+                await update_user(bot['id'], chat_id, step=next_step)
+
+            if status == "ERROR":
+                await send_message(bot, user, mes)
+
+            return web.Response(text="OK")
+
+        # if text.lower() in [x.strip().lower() for x in bot['text_start'].split('|') if x]: # == "старт":
+        if text.startswith('/start'):
+
+            next_step, status, mes = await handle_first_message(bot, user)
+
+            if status == "ERROR":
+                await send_message(bot, user, mes)
+            if next_step:
+                await update_user(bot['id'], chat_id, step=next_step)
+
+        else:
+
+            next_step, status, mes = await handle_current_step(bot, user, update)
+
+            if status == "ERROR":
+                await send_message(bot, user, mes)
+            if status == "SUCCESS":
+                if mes:
                     await send_message(bot, user, mes)
-                if status == "SUCCESS":
-                    if mes:
-                        await send_message(bot, user, mes)
-                if next_step:
-                    await update_user(bot_id, chat_id, step=next_step)
+            if next_step:
+                await update_user(bot['id'], chat_id, step=next_step)
 
         return web.Response(text="OK")
 
@@ -707,8 +672,6 @@ async def webhook(request):
         print(exc_type, fname, exc_tb.tb_lineno)
         print(str(e))
         logging.error("webhook {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-        # await bot.send_message(354691583, "{} {} {} \n {}".format(
-        # exc_type, fname, exc_tb.tb_lineno, str(e)))
 
     return web.Response(text="OK")
 
@@ -757,7 +720,7 @@ loop = asyncio.get_event_loop()
 
 app = web.Application(loop=loop)
 
-app.router.add_post('/bot_webhook/{bot_id}/', webhook)
+app.router.add_post('/bot_webhook/{bot_token}/', webhook)
 
 app.router.add_post('/tg_webhook', tg_webhook)
 

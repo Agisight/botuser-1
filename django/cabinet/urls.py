@@ -4,9 +4,15 @@ from .views import *
 
 urlpatterns = [
 
-    path('api/bot_list/', UserBotList.as_view(), name='bot-list'),
+    path('api/bot_list/', BotListCreateView.as_view(), name='bot-list'),
 
-    # path('create_bot/', create_bot, name='create_bot'),
+    path('api/bot_data/<int:id>/', UpdateBotView.as_view(), name='bot-data'),
+
+    path('api/upload_photo/<int:bot_id>/', upload_photo, name='upload_photo'),
+    path('api/upload_file/<int:bot_id>/', upload_file, name='upload_file'),
+
+    path('api/set_webhook/<int:id>/', SetWebhookView.as_view(), name='set-webhook'),
+
     # path('get_bot_list/', get_bot_list, name='get_bot_list'),
     #
     # path('bot/<int:bot_id>/upload_photo/', upload_photo, name='upload_photo'),

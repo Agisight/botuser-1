@@ -4,6 +4,7 @@ from django.contrib.postgres.fields import JSONField
 import json
 import requests
 from datetime import datetime, timedelta
+import telebot
 
 User = get_user_model()
 
@@ -39,7 +40,7 @@ class Bot(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    name = models.CharField(max_length=255, null=True, blank=True)
+    name = models.CharField(max_length=255)
 
     is_active = models.BooleanField(default=False)
     podpiska_do = models.DateField(auto_now_add=False, auto_now=False, null=True, blank=True)
@@ -63,9 +64,29 @@ class Bot(models.Model):
         verbose_name = 'Бот'
         verbose_name_plural = 'Бот'
 
-    # def save(self, *args, **kwargs):
-    #
-    #     super().save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+
+        if not self.pk:
+
+            self_in_db = Bot.objects.get(pk=self.pk)
+
+            if self.set_webhook and not self_in_db.set_webhook:
+
+                if self.token:
+
+                    bot = telebot.TeleBot(token=self.token)
+                    try:
+                        res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
+                                              certificate=f"/ssl/webhook_cert.pem")
+                        print(res)
+                        self.last_log_set_webhook = json.dumps(res)
+                    except Exception as e:
+                        self.last_log_set_webhook = str(e)
+
+                    # if res:
+                    #     self.status = 'on'
+
+        super().save(*args, **kwargs)
 
 
 class BotUser(models.Model):
