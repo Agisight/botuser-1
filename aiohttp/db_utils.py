@@ -283,13 +283,23 @@ async def update_order(order_id, **kwargs):
         return await conn.fetch(sql_query, *vars)
 
 
-async def get_bot(bot_id):
+# async def get_bot(bot_id):
+#     async with pool.acquire() as conn:
+#         result = await conn.fetch('SELECT t1.*, t2.is_active as profile_is_active, t2.partner_id, t3.is_active as partner_is_active, t3.podpiska_do as partner_podpiska_do '
+#                                   'FROM bot_bot t1 '
+#                                   'LEFT JOIN accounts_profile t2 ON t1.profile_id = t2.id '
+#                                   'LEFT JOIN accounts_partnerprofile t3 ON t2.partner_id = t3.id '
+#                                   'WHERE t1.id = $1', bot_id)
+#
+#         if result:
+#             return result[0]
+#         return result
+
+
+async def get_bot(bot_token):
     async with pool.acquire() as conn:
-        result = await conn.fetch('SELECT t1.*, t2.is_active as profile_is_active, t2.partner_id, t3.is_active as partner_is_active, t3.podpiska_do as partner_podpiska_do '
-                                  'FROM bot_bot t1 '
-                                  'LEFT JOIN accounts_profile t2 ON t1.profile_id = t2.id '
-                                  'LEFT JOIN accounts_partnerprofile t3 ON t2.partner_id = t3.id '
-                                  'WHERE t1.id = $1', bot_id)
+        result = await conn.fetch('SELECT * FROM bot_bot '
+                                  'WHERE token = $1', bot_token)
 
         if result:
             return result[0]

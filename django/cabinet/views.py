@@ -121,21 +121,29 @@ class SetWebhookView(APIView):
 
         bot = Bot.objects.get(id=id)
 
-        if self.token:
+        # data = json.loads(request.body)
 
-            bot = telebot.TeleBot(token=self.token)
+        if bot.token:
+
+            bot = telebot.TeleBot(token=bot.token)
+
             try:
-                res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
-                                      certificate=f"/ssl/webhook_cert.pem")
-                print(res)
-                self.last_log_set_webhook = json.dumps(res)
-            except Exception as e:
-                self.last_log_set_webhook = str(e)
 
-            return Response({"status": "OK"})
+                res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
+                                      certificate=open('/ssl/webhook_cert.pem'))
+                bot.last_log_set_webhook = json.dumps(res)
+
+                if res:
+                    bot.status = 'on'
+                    bot.save()
+                    return Response({"status": "OK"})
+
+            except Exception as e:
+                bot.last_log_set_webhook = str(e)
+
+            bot.save()
 
         return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
-
 
 # class BotList(APIView):
 #

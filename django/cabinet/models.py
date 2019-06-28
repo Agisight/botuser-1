@@ -51,7 +51,7 @@ class Bot(models.Model):
         ('off', 'НЕ подключен'),
         ('on', 'Подключен'),
     ))
-    last_log_set_webhook = models.CharField(max_length=255, null=True, blank=True)
+    last_log_set_webhook = models.TextField(null=True, blank=True)
 
     data = JSONField(null=True, blank=True)
 
@@ -66,7 +66,7 @@ class Bot(models.Model):
 
     def save(self, *args, **kwargs):
 
-        if not self.pk:
+        if self.pk:
 
             self_in_db = Bot.objects.get(pk=self.pk)
 
@@ -77,14 +77,14 @@ class Bot(models.Model):
                     bot = telebot.TeleBot(token=self.token)
                     try:
                         res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
-                                              certificate=f"/ssl/webhook_cert.pem")
-                        print(res)
+                                              certificate=open('/ssl/webhook_cert.pem'))
+                        if res:
+                            self.status = 'on'
                         self.last_log_set_webhook = json.dumps(res)
                     except Exception as e:
                         self.last_log_set_webhook = str(e)
 
-                    # if res:
-                    #     self.status = 'on'
+                self.set_webhook = False
 
         super().save(*args, **kwargs)
 
