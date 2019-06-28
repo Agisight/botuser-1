@@ -588,7 +588,7 @@ async def webhook(request):
 
         bot = await get_bot(bot_token)
 
-        # print(bot)
+        print(bot)
 
         # ---- проверка доступа ----
         # if bot['podpiska_do'] < datetime.today().date():
