@@ -163,6 +163,14 @@ async def update_bot(bot_id, **kwargs):
         return await conn.fetch(sql_query, *vars)
 
 
+async def get_user(bot_id, chat_id):
+    async with pool.acquire() as conn:
+        result = await conn.fetch('SELECT * FROM cabinet_botuser WHERE bot_id = $1 AND chat_id = $2', bot_id, chat_id)
+        if result:
+            return result[0]
+        return result
+
+
 async def create_order(bot_id, user_id, order_text):
     async with pool.acquire() as conn:
 

@@ -25,3 +25,4 @@ djangorestframework_simplejwt
 djangorestframework
 markdown
 django-filter
+vk
