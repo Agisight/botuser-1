@@ -1,8 +1,18 @@
 from django.urls import path, re_path, include
 
 from .views import *
+from accounts.views import *
+
+from rest_framework_simplejwt import views as jwt_views
 
 urlpatterns = [
+
+    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/token/verify/', jwt_views.TokenVerifyView.as_view(), name='token_verify'),
+
+    re_path('api/ch_pass/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', ChangePassword.as_view()),
+    path('api/register/', RegisterUser.as_view(), name='register-user'),
 
     path('api/bot_list/', BotListCreateView.as_view(), name='bot-list'),
 
