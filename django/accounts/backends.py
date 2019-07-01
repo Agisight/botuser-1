@@ -3,9 +3,9 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class UserAuth:
-    def authenticate(self, request, username=None, password=None, **kwargs):
+    def authenticate(self, request, email=None, password=None, **kwargs):
         try:
-            user = User.objects.get(email=username)
+            user = User.objects.get(email=email)
             if user.check_password(password):
                 return user
         except User.DoesNotExist:
