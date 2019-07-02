@@ -56,7 +56,7 @@ class RegisterUser(APIView):
 
     #@csrf_exempt
     def post(self, request):
-        # {"email": "qwe@ua.fm", "password": "1111", "password2": "1112"}
+
         try:
 
             data = json.loads(request.body)
@@ -64,15 +64,8 @@ class RegisterUser(APIView):
             print(data)
 
             serializer = UserRegisterSerializer(data=data)
-            # user = UserRegisterSerializer(email="qwe@ua.fm", password="1111", password2="1112")
 
             if not serializer.is_valid():
-                errors = []
-                for error in serializer.errors:
-                    for er in serializer.errors[error]:
-                        errors.append(str(er))
-                        print(er)
-
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
             user = serializer.save()
@@ -84,7 +77,6 @@ class RegisterUser(APIView):
                 'access': str(refresh.access_token),
             }
 
-            # return Response(serializer.data)
             return Response(resp)
 
         except Exception as e:
