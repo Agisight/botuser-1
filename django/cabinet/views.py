@@ -83,7 +83,6 @@ def random_id():
 # TODO
 # add permission class bot contains user
 
-#class UserBotList(generics.ListAPIView): #
 class BotListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
 
@@ -128,7 +127,8 @@ class SetWebhookView(APIView):
 
         bot = Bot.objects.get(id=id)
 
-        # data = json.loads(request.body)
+        data = json.loads(request.body)
+        token = data['token']
 
         if bot.token:
 
@@ -161,6 +161,10 @@ class UploadPhoto(APIView):
 
         try:
 
+            bot = Bot.objects.get(id=bot_id)
+            if bot.user.id != request.user.id:
+                return Response(status=400)
+
             f = request.FILES['image']
 
             image_bot_path = f"./media/upload_photos/{bot_id}"
@@ -190,7 +194,6 @@ class UploadPhoto(APIView):
             return Response(data)
 
 
-
 class UploadFile(APIView):
     # permission_classes = (IsAuthenticated,)
     http_method_names = ['post']
@@ -198,6 +201,10 @@ class UploadFile(APIView):
     def post(self, request, bot_id):
 
         try:
+
+            bot = Bot.objects.get(id=bot_id)
+            if bot.user.id != request.user.id:
+                return Response(status=400)
 
             f = request.FILES['file']
 
