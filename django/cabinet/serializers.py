@@ -20,6 +20,7 @@ class BotCreateSerializer(serializers.ModelSerializer):
         print("validated_data", validated_data)
         print(self.context['request'])
         print(self.context['request'].user)
+        validated_data['user'] = self.context['request'].user
         print(validated_data)
         return super(BotCreateSerializer, self).create(validated_data)
         #return User.objects.create_user(email=validated_data['email'], password=validated_data['password'])
