@@ -16,12 +16,12 @@ urlpatterns = [
 
     path('api/bot_list/', BotListCreateView.as_view(), name='bot-list'),
 
-    path('api/bot_data/<int:id>/', RetrieveUpdateBotView.as_view(), name='bot-data'),
+    path('api/bot_data/<int:pk>/', RetrieveUpdateBotView.as_view(), name='bot-data'),
 
     path('api/upload_photo/<int:bot_id>/', upload_photo, name='upload_photo'),
     path('api/upload_file/<int:bot_id>/', upload_file, name='upload_file'),
 
-    path('api/set_webhook/<int:id>/', SetWebhookView.as_view(), name='set-webhook'),
+    path('api/set_webhook/<int:pk>/', SetWebhookView.as_view(), name='set-webhook'),
 
     # path('get_bot_list/', get_bot_list, name='get_bot_list'),
     #
