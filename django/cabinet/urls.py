@@ -16,7 +16,7 @@ urlpatterns = [
 
     path('api/bot_list/', BotListCreateView.as_view(), name='bot-list'),
 
-    path('api/bot_data/<int:id>/', UpdateBotView.as_view(), name='bot-data'),
+    path('api/bot_data/<int:id>/', RetrieveUpdateBotView.as_view(), name='bot-data'),
 
     path('api/upload_photo/<int:bot_id>/', upload_photo, name='upload_photo'),
     path('api/upload_file/<int:bot_id>/', upload_file, name='upload_file'),

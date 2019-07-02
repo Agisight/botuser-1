@@ -101,13 +101,17 @@ class BotListCreateView(generics.ListCreateAPIView):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        
+
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class UpdateBotView(generics.UpdateAPIView):
+class RetrieveUpdateBotView(generics.RetrieveUpdateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = BotUpdateSerializer
+
+    def get(self, request, id, *args, **kwargs):
+        self.serializer_class = BotDetailSerializer
+        super(RetrieveUpdateBotView, self).get(self, request, id, *args, **kwargs)
 
     # def update(self, request, id):
     #     instance = self.get_object(id)
