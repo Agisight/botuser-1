@@ -100,7 +100,8 @@ class BotListCreateView(generics.ListCreateAPIView):
         serializer = self.get_serializer(data=request.data)
 
         if serializer.is_valid():
-            serializer.save()
+            bot = serializer.save()
+            serializer.data['id'] = bot.id
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

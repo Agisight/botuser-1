@@ -12,10 +12,9 @@ class BotListSerializer(serializers.ModelSerializer):
 
 class BotCreateSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
-    id = serializers.IntegerField()
     class Meta:
         model = Bot
-        fields = ('id', 'name', )
+        fields = ('name', )
 
     def create(self, validated_data):
         validated_data['user'] = self.context['request'].user
