@@ -94,8 +94,23 @@ class BotListCreateView(generics.ListCreateAPIView):
         return Response(serializer.data)
 
     def create(self, request):
-        print(request.data)
-        serializer = BotCreateSerializer(data=request.data)
+
+        self.serializer_class = BotCreateSerializer
+
+        # get_serializer
+        # serializer_class = self.get_serializer_class()
+        # kwargs['context'] = self.get_serializer_context()
+        # return serializer_class(*args, **kwargs)
+
+        serializer = self.get_serializer(data=request.data)
+        # serializer.is_valid(raise_exception=True)
+        # self.perform_create(serializer)
+        # headers = self.get_success_headers(serializer.data)
+        # return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+        #
+        #
+        # print(request.data)
+        # serializer = BotCreateSerializer(data=request.data)
         print(serializer)
         print(1111)
         if serializer.is_valid():
