@@ -96,13 +96,12 @@ class BotListCreateView(generics.ListCreateAPIView):
     def create(self, request):
 
         self.serializer_class = BotCreateSerializer
-
         serializer = self.get_serializer(data=request.data)
 
         if serializer.is_valid():
-            bot = serializer.save()
-            print(bot)
-            return Response(serializer.data.update({'id': bot.id}))
+            serializer.save()
+            return Response(serializer.data)
+        
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
