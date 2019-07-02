@@ -26,7 +26,7 @@ class Bot(models.Model):
     ))
     last_log_set_webhook = models.TextField(null=True, blank=True)
 
-    data = JSONField(null=True, blank=True)
+    data = JSONField(default='[]')
 
     date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
 

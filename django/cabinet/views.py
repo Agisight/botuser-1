@@ -111,20 +111,14 @@ class RetrieveUpdateBotView(generics.RetrieveUpdateAPIView):
     def get(self, request, *args, **kwargs):
         self.serializer_class = BotDetailSerializer
         self.queryset = Bot.objects.filter(user=request.user)
-        return super(RetrieveUpdateBotView, self).get(self, request, *args, **kwargs)
+
+        return super(RetrieveUpdateBotView, self).get(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
         self.serializer_class = BotUpdateSerializer
         self.queryset = Bot.objects.filter(user=request.user)
-        return super(RetrieveUpdateBotView, self).put(self, request, *args, **kwargs)
 
-    # def update(self, request, id):
-    #     instance = self.get_object(id)
-    #     serializer = BotUpdateSerializer(instance, data=request.data)
-    #     if serializer.is_valid():
-    #         serializer.save()
-    #         return Response(serializer.data)
-    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return super(RetrieveUpdateBotView, self).put(request, *args, **kwargs)
 
 
 class SetWebhookView(APIView):
