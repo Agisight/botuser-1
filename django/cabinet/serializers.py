@@ -8,7 +8,7 @@ class BotListSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
     class Meta:
         model = Bot
-        fields = ('id', 'name', 'is_active', 'podpiska_do', 'status', 'date_in', )
+        fields = ('id', 'name', 'is_active', 'podpiska_do', 'data', 'status', 'date_in', )
 
 
 class BotDetailSerializer(serializers.ModelSerializer):
