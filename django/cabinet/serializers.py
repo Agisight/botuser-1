@@ -7,28 +7,20 @@ class BotListSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
     class Meta:
         model = Bot
-        fields = ('name', 'is_active', 'podpiska_do', 'status', 'date_in', )
+        fields = ('id', 'name', 'is_active', 'podpiska_do', 'status', 'date_in', )
 
 
 class BotCreateSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
+    id = serializers.IntegerField()
     class Meta:
         model = Bot
-        fields = ('name', )
+        fields = ('id', 'name', )
 
     def create(self, validated_data):
-        print("validated_data", validated_data)
-        print(self.context['request'])
-        print(self.context['request'].user)
         validated_data['user'] = self.context['request'].user
-        print(validated_data)
         return super(BotCreateSerializer, self).create(validated_data)
-        #return User.objects.create_user(email=validated_data['email'], password=validated_data['password'])
 
-    def validate(self, data):
-
-        print(data)
-        return data
 
 
 class BotUpdateSerializer(serializers.ModelSerializer):
