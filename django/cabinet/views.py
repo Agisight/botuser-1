@@ -107,10 +107,16 @@ class BotListCreateView(generics.ListCreateAPIView):
 
 class RetrieveUpdateBotView(generics.RetrieveUpdateAPIView):
     permission_classes = (IsAuthenticated,)
-    serializer_class = BotUpdateSerializer
+    queryset = Bot.objects.all()
 
     def get(self, request, id, *args, **kwargs):
         self.serializer_class = BotDetailSerializer
+        queryset = Bot.objects.filter(user=request.user)
+        super(RetrieveUpdateBotView, self).get(self, request, id, *args, **kwargs)
+
+    def patch(self, request, id, *args, **kwargs):
+        self.serializer_class = BotUpdateSerializer
+        queryset = Bot.objects.filter(user=request.user)
         super(RetrieveUpdateBotView, self).get(self, request, id, *args, **kwargs)
 
     # def update(self, request, id):
