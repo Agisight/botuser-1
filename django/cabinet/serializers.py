@@ -17,7 +17,10 @@ class BotCreateSerializer(serializers.ModelSerializer):
         fields = ('name', )
 
     def create(self, validated_data):
+        print(validated_data)
+        print(self.context['request'])
         validated_data['user'] = self.context['request'].user
+        print(validated_data)
         return super(BotCreateSerializer, self).create(validated_data)
         #return User.objects.create_user(email=validated_data['email'], password=validated_data['password'])
 
