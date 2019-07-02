@@ -109,15 +109,15 @@ class RetrieveUpdateBotView(generics.RetrieveUpdateAPIView):
     permission_classes = (IsAuthenticated,)
     queryset = Bot.objects.all()
 
-    def get(self, request, id, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         self.serializer_class = BotDetailSerializer
         queryset = Bot.objects.filter(user=request.user)
-        super(RetrieveUpdateBotView, self).get(self, request, id, *args, **kwargs)
+        super(RetrieveUpdateBotView, self).get(self, request, *args, **kwargs)
 
-    def patch(self, request, id, *args, **kwargs):
+    def patch(self, request, *args, **kwargs):
         self.serializer_class = BotUpdateSerializer
         queryset = Bot.objects.filter(user=request.user)
-        super(RetrieveUpdateBotView, self).get(self, request, id, *args, **kwargs)
+        super(RetrieveUpdateBotView, self).get(self, request, *args, **kwargs)
 
     # def update(self, request, id):
     #     instance = self.get_object(id)
