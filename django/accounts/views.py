@@ -49,6 +49,7 @@ from .serializers import *
 import logging
 logging.basicConfig(filename="./log.txt", level=logging.ERROR)
 
+
 class RegisterUser(APIView):
     # permission_classes = (IsAuthenticated,)
     http_method_names = ['post']

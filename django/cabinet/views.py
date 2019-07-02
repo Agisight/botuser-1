@@ -602,7 +602,7 @@ class SetWebhookView(APIView):
 def upload_photo(request, bot_id):
 
     if not request.user.is_authenticated:
-        return redirect(reverse('accounts:login', host='www'))
+        return Response(status=403)
 
     if request.user.is_superuser:
         logout(request)

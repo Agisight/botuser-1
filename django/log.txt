@@ -52576,3 +52576,158 @@ WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /api/bot_data/faq
 WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /api/bot_data/faq/
 WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /api/bot_data/faq/
 WARNING:django.request:Not Found: /accounts/login/img/favicon/favicon.ico
+WARNING:django.request:Bad Request: /
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'www.inbot24.ru'. You may need to add 'www.inbot24.ru' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'cabinet.inbot24.ru'. You may need to add 'cabinet.inbot24.ru' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /
+WARNING:django.request:Not Found: /
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77:80'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /
+WARNING:django.request:Not Found: /.well-known22/acme-challenge/DbdZcoudAOYUAp-fW-OKsr1_vZb_bllSv_poM1HbwIw
+WARNING:django.request:Not Found: /
+WARNING:django.request:Unauthorized: /api/bot_list/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /
+WARNING:django.request:Method Not Allowed: /api/token/
+WARNING:django.request:Method Not Allowed: /api/token/
+WARNING:django.request:Not Found: /robots.txt
+WARNING:django.request:Not Found: /robots.txt
+WARNING:django.request:Not Found: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /sitemap.xml
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.well-known/security.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.env
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /sftp-config.json
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.ftpconfig
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.remote-sync.json
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.vscode/ftp-sync.json
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.vscode/sftp.json
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /deployment-config.json
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /ftpsync.settings
+WARNING:django.request:Bad Request: /admin
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /admin/
+WARNING:django.request:Not Found: /robots.txt
+WARNING:django.request:Not Found: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /robots.txt
+WARNING:django.request:Not Found: /robots.txt
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /policy
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.git/config
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /contact
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /contact
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /robots.txt
+WARNING:django.request:Not Found: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /wp/wp-login.php
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /node/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /wallet/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /coin/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /bitcoin/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /btc/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /core/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /crypto/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /backup/wallet.dat
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /hidden/wallet.dat
+WARNING:django.request:Not Found: /sales
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /user/wp-login.php
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /wordpress/wp-login.php
+WARNING:django.request:Not Found: /robots.txt
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /api/bots_list/
+WARNING:django.request:Not Found: /api/bots_list/
+WARNING:django.request:Not Found: /browser-sync/browser-sync-client.js
+WARNING:django.request:Not Found: /js/scripts.min.js
+WARNING:django.request:Not Found: /css/main.min.css
+WARNING:django.request:Not Found: /img/user.png
+WARNING:django.request:Not Found: /api/bots_list/
+WARNING:django.request:Not Found: /api/bots_list/
+WARNING:django.request:Not Found: /api/bots_list/
+WARNING:django.request:Not Found: /api/bots_list/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /forum/wp-login.php
+WARNING:django.request:Not Found: /babel/parser/lib/index.js
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /api/register
+WARNING:django.request:Not Found: /api/register/
+WARNING:django.request:Not Found: /api/register/
+WARNING:django.request:Not Found: /api/register/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /robots.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /sitemap.xml
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /.well-known/security.txt
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /HNAP1/
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: '45.77.53.77'. You may need to add '45.77.53.77' to ALLOWED_HOSTS.
+WARNING:django.request:Bad Request: /blog/wp-login.php
+WARNING:django.request:Not Found: /css/main.min.css
+WARNING:django.request:Not Found: /browser-sync/browser-sync-client.js
+WARNING:django.request:Not Found: /js/scripts.min.js
+WARNING:django.request:Not Found: /img/user.png
+WARNING:django.request:Not Found: /sales
+WARNING:django.request:Not Found: /api/register/
+WARNING:django.request:Not Found: /api/register/
