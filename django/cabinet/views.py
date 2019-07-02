@@ -48,6 +48,8 @@ from django.template.defaultfilters import date as _date
 from django.core.paginator import Paginator
 from django.db.models import Count, Min, Sum, Avg
 
+from django.views.generic.base import TemplateView
+
 from rest_framework import generics
 from rest_framework import status
 
@@ -82,6 +84,11 @@ def random_id():
 
 # TODO
 # add permission class bot contains user
+
+
+class IndexCabinetView(TemplateView):
+    template_name = "index.html"
+
 
 class BotListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -130,25 +137,24 @@ class SetWebhookView(APIView):
         data = json.loads(request.body)
         token = data['token']
 
-        if bot.token:
+        tg_bot = telebot.TeleBot(token=token)
 
-            bot = telebot.TeleBot(token=bot.token)
+        try:
 
-            try:
+            res = tg_bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{token}/",
+                                  certificate=open('/ssl/webhook_cert.pem'))
+            bot.last_log_set_webhook = json.dumps(res)
 
-                res = bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{self.token}/",
-                                      certificate=open('/ssl/webhook_cert.pem'))
-                bot.last_log_set_webhook = json.dumps(res)
+            if res:
+                bot.status = 'on'
+                bot.token = token
+                bot.save()
+                return Response({"status": "OK"})
 
-                if res:
-                    bot.status = 'on'
-                    bot.save()
-                    return Response({"status": "OK"})
+        except Exception as e:
+            bot.last_log_set_webhook = str(e)
 
-            except Exception as e:
-                bot.last_log_set_webhook = str(e)
-
-            bot.save()
+        bot.save()
 
         return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 

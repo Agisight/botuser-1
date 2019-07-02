@@ -23,6 +23,8 @@ urlpatterns = [
 
     path('api/set_webhook/<int:pk>/', SetWebhookView.as_view(), name='set-webhook'),
 
+    re_path(r'^', IndexCabinetView.as_view, name='index-view'),
+
     # path('get_bot_list/', get_bot_list, name='get_bot_list'),
     #
     # path('bot/<int:bot_id>/upload_photo/', upload_photo, name='upload_photo'),
