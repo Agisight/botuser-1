@@ -18,8 +18,8 @@ urlpatterns = [
 
     path('api/bot_data/<int:pk>/', RetrieveUpdateBotView.as_view(), name='bot-data'),
 
-    path('api/upload_photo/<int:bot_id>/', upload_photo, name='upload_photo'),
-    path('api/upload_file/<int:bot_id>/', upload_file, name='upload_file'),
+    path('api/upload_photo/<int:bot_id>/', UploadPhoto.as_view(), name='upload-photo'),
+    path('api/upload_file/<int:bot_id>/', UploadFile.as_view(), name='upload-file'),
 
     path('api/set_webhook/<int:pk>/', SetWebhookView.as_view(), name='set-webhook'),
 

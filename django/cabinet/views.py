@@ -152,6 +152,81 @@ class SetWebhookView(APIView):
 
         return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
+
+class UploadPhoto(APIView):
+    # permission_classes = (IsAuthenticated,)
+    http_method_names = ['post']
+
+    def post(self, request, bot_id):
+
+        try:
+
+            f = request.FILES['image']
+
+            image_bot_path = f"./media/upload_photos/{bot_id}"
+
+            if not os.path.exists(image_bot_path):
+                os.makedirs(image_bot_path)
+
+            f_name = f"{int(time() * 100000000)}_{str(f)}"
+
+            f_path = f"{image_bot_path}/{f_name}"
+
+            with open(f_path, 'wb+') as destination:
+                for chunk in f.chunks():
+                    destination.write(chunk)
+
+            response = {"url": f"https://inbot24.ru/media/upload_photos/{bot_id}/{f_name}"}
+
+            return Response(response)
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            logging.error("UploadPhoto {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+            data = {"status": "error"}
+            return Response(data)
+
+
+
+class UploadFile(APIView):
+    # permission_classes = (IsAuthenticated,)
+    http_method_names = ['post']
+
+    def post(self, request, bot_id):
+
+        try:
+
+            f = request.FILES['file']
+
+            image_bot_path = f"./media/upload_files/{bot_id}"
+
+            if not os.path.exists(image_bot_path):
+                os.makedirs(image_bot_path)
+
+            f_name = f"{int(time() * 100000000)}_{str(f)}"
+
+            f_path = f"{image_bot_path}/{f_name}"
+
+            with open(f_path, 'wb+') as destination:
+                for chunk in f.chunks():
+                    destination.write(chunk)
+
+            response = {"url": f"https://inbot24.ru/media/upload_files/{bot_id}/{f_name}"}
+
+            return Response(response)
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            logging.error("UploadFile {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+            data = {"status": "error"}
+            return Response(data)
+
 # class BotList(APIView):
 #
 #     #permission_classes = (IsAuthenticated,)
@@ -596,94 +671,93 @@ class SetWebhookView(APIView):
 #         logging.error("get_bot_orders {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 #
 #         return JsonResponse({"error": "some error"})
-
-
-#@csrf_exempt
-def upload_photo(request, bot_id):
-
-    if not request.user.is_authenticated:
-        return Response(status=403)
-
-    if request.user.is_superuser:
-        logout(request)
-        return redirect(reverse('accounts:login', host='www'))
-
-    try:
-
-        if request.method != 'POST':
-            return HttpResponse(status=415)
-
-        f = request.FILES['image']
-
-        image_bot_path = f"./media/upload_photos/{bot_id}"
-
-        if not os.path.exists(image_bot_path):
-            os.makedirs(image_bot_path)
-
-        f_name = f"{int(time() * 100000000)}_{str(f)}"
-
-        f_path = f"{image_bot_path}/{f_name}"
-
-        with open(f_path, 'wb+') as destination:
-            for chunk in f.chunks():
-                destination.write(chunk)
-
-        response = {"url": f"https://inbot24.ru/media/upload_photos/{bot_id}/{f_name}"}
-
-        return JsonResponse(response)
-
-    except Exception as e:
-
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        logging.error("upload_photo {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-
-        return HttpResponse("some error")
-
-
-#@csrf_exempt
-def upload_file(request, bot_id):
-
-    if not request.user.is_authenticated:
-        return redirect(reverse('accounts:login', host='www'))
-
-    if request.user.is_superuser:
-        logout(request)
-        return redirect(reverse('accounts:login', host='www'))
-
-    try:
-
-        if request.method != 'POST':
-            return HttpResponse(status=415)
-
-        f = request.FILES['file']
-
-        image_bot_path = f"./media/upload_files/{bot_id}"
-
-        if not os.path.exists(image_bot_path):
-            os.makedirs(image_bot_path)
-
-        f_name = f"{int(time() * 100000000)}_{str(f)}"
-
-        f_path = f"{image_bot_path}/{f_name}"
-
-        with open(f_path, 'wb+') as destination:
-            for chunk in f.chunks():
-                destination.write(chunk)
-
-        response = {"url": f"https://inbot24.ru/media/upload_files/{bot_id}/{f_name}"}
-
-        return JsonResponse(response)
-
-    except Exception as e:
-
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        logging.error("upload_files {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-
-        return HttpResponse("some error")
-
-
+#
+# #@csrf_exempt
+# def upload_photo(request, bot_id):
+#
+#     if not request.user.is_authenticated:
+#         return HttpResponse(status=415)
+#
+#     if request.user.is_superuser:
+#         logout(request)
+#         return redirect(reverse('accounts:login', host='www'))
+#
+#     try:
+#
+#         if request.method != 'POST':
+#             return HttpResponse(status=415)
+#
+#         f = request.FILES['image']
+#
+#         image_bot_path = f"./media/upload_photos/{bot_id}"
+#
+#         if not os.path.exists(image_bot_path):
+#             os.makedirs(image_bot_path)
+#
+#         f_name = f"{int(time() * 100000000)}_{str(f)}"
+#
+#         f_path = f"{image_bot_path}/{f_name}"
+#
+#         with open(f_path, 'wb+') as destination:
+#             for chunk in f.chunks():
+#                 destination.write(chunk)
+#
+#         response = {"url": f"https://inbot24.ru/media/upload_photos/{bot_id}/{f_name}"}
+#
+#         return JsonResponse(response)
+#
+#     except Exception as e:
+#
+#         exc_type, exc_obj, exc_tb = sys.exc_info()
+#         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+#         logging.error("upload_photo {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+#
+#         return HttpResponse("some error")
+#
+#
+# #@csrf_exempt
+# def upload_file(request, bot_id):
+#
+#     if not request.user.is_authenticated:
+#         return HttpResponse(status=403)
+#
+#     if request.user.is_superuser:
+#         logout(request)
+#         return redirect(reverse('accounts:login', host='www'))
+#
+#     try:
+#
+#         if request.method != 'POST':
+#             return HttpResponse(status=415)
+#
+#         f = request.FILES['file']
+#
+#         image_bot_path = f"./media/upload_files/{bot_id}"
+#
+#         if not os.path.exists(image_bot_path):
+#             os.makedirs(image_bot_path)
+#
+#         f_name = f"{int(time() * 100000000)}_{str(f)}"
+#
+#         f_path = f"{image_bot_path}/{f_name}"
+#
+#         with open(f_path, 'wb+') as destination:
+#             for chunk in f.chunks():
+#                 destination.write(chunk)
+#
+#         response = {"url": f"https://inbot24.ru/media/upload_files/{bot_id}/{f_name}"}
+#
+#         return JsonResponse(response)
+#
+#     except Exception as e:
+#
+#         exc_type, exc_obj, exc_tb = sys.exc_info()
+#         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+#         logging.error("upload_files {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+#
+#         return HttpResponse("some error")
+#
+#
 # def get_qr_code(request, bot_id):
 #
 #     if not request.user.is_authenticated:
