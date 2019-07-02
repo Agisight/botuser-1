@@ -8,33 +8,6 @@ import telebot
 
 User = get_user_model()
 
-def set_webhook(api_url, api_key, bot_id):
-
-    url = f"{api_url}/webhook?token={api_key}"
-    data = {"webhookUrl": f"https://app.whatsbot.online/bot_webhook/{bot_id}/"}
-
-    try:
-        r = requests.post(url, data=data)
-
-        print(r.text)
-        return True, json.loads(r.text)
-    except Exception as e:
-        return False, {"error": str(e)}
-
-
-def create_instance():
-    data = {"uid": "TYSCIMWbEqb0dmfaddXizq5kMdD2", "type": "whatsapp"}
-    url = 'https://us-central1-app-chat-api-com.cloudfunctions.net/newInstance'
-
-    try:
-        r = requests.post(url, data=data)
-        return True, json.loads(r.text)
-    except Exception as e:
-        return False, {"error": str(e)}
-
-    # {"error":"not paid account already exists"}
-
-
 
 class Bot(models.Model):
 
