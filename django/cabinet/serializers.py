@@ -24,6 +24,11 @@ class BotCreateSerializer(serializers.ModelSerializer):
         return super(BotCreateSerializer, self).create(validated_data)
         #return User.objects.create_user(email=validated_data['email'], password=validated_data['password'])
 
+    def validate(self, data):
+
+        print(data)
+        return data
+
 
 class BotUpdateSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
