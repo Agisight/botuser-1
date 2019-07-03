@@ -22,7 +22,7 @@ urlpatterns = [
     path('api/upload_photo/<int:bot_id>/', UploadPhoto.as_view(), name='upload-photo'),
     path('api/upload_file/<int:bot_id>/', UploadFile.as_view(), name='upload-file'),
 
-    path('api/set_webhook/<int:pk>/', SetWebhookView.as_view(), name='set-webhook'),
+    path('api/set_webhook/<int:bot_id>/', SetWebhookView.as_view(), name='set-webhook'),
 
     re_path(r'^', IndexCabinetView.as_view(), name='index-view'),
 

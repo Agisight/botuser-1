@@ -132,11 +132,11 @@ class RetrieveUpdateBotView(generics.RetrieveUpdateAPIView):
 class SetWebhookView(APIView):
     permission_classes = (IsAuthenticated,)
 
-    def post(self, request, id):
+    def post(self, request, bot_id):
 
         try:
 
-            bot = Bot.objects.get(id=id)
+            bot = Bot.objects.get(id=bot_id)
 
             data = json.loads(request.body)
             token = data['token']
