@@ -69,12 +69,14 @@ def is_digit(string):
         except ValueError:
             return False
 
+
 def isint(s):
     try:
         int(s)
         return True
     except ValueError:
         return False
+
 
 def random_id():
   rid = ''
@@ -132,17 +134,17 @@ class SetWebhookView(APIView):
 
     def post(self, request, id):
 
-        bot = Bot.objects.get(id=id)
-
-        data = json.loads(request.body)
-        token = data['token']
-
-        tg_bot = telebot.TeleBot(token=token)
-
         try:
 
+            bot = Bot.objects.get(id=id)
+
+            data = json.loads(request.body)
+            token = data['token']
+
+            tg_bot = telebot.TeleBot(token=token)
+
             res = tg_bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{token}/",
-                                  certificate=open('/ssl/webhook_cert.pem'))
+                                     certificate=open('/ssl/webhook_cert.pem'))
             bot.last_log_set_webhook = json.dumps(res)
 
             if res:

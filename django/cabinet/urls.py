@@ -11,6 +11,7 @@ urlpatterns = [
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/verify/', jwt_views.TokenVerifyView.as_view(), name='token_verify'),
 
+    path('api/forgot_password/', ForgotPassword.as_view()),
     re_path('api/ch_pass/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', ChangePassword.as_view()),
     path('api/register/', RegisterUser.as_view(), name='register-user'),
 

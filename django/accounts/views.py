@@ -107,7 +107,7 @@ class ForgotPassword(APIView):
             email = data["email"].lower()
 
             try:
-                user = User.objects.get(username=email)
+                user = User.objects.get(email=email)
             except Exception as e:
                 user = None
 
