@@ -287,7 +287,7 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
             #
             #     await order_notify(bot, user, order_text)
 
-        return f"{next_screen_id}|{element['id']}"
+        # return f"{next_screen_id}|{element['id']}"
 
     except Exception as e:
         exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -625,7 +625,7 @@ async def handle_first_message(bot, user):
 
                 await send_message(bot, user, mes)
 
-        return next_step
+        # return next_step
 
     except Exception as e:
         exc_type, exc_obj, exc_tb = sys.exc_info()
