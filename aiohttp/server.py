@@ -548,10 +548,10 @@ async def handle_current_step(bot, user, update):
         print(str(e))
         logging.error("handle_current_step {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 
-    mes = {"type": "text",
-           "text": "Ошибка! Обратитесь в службу поддержки. Для того чтобы вернутся в начало, напишите /start"}
-    await send_message(bot, user, mes)
-    return None
+    # mes = {"type": "text",
+    #        "text": "Ошибка! Обратитесь в службу поддержки. Для того чтобы вернутся в начало, напишите /start"}
+    # await send_message(bot, user, mes)
+    # return None
 
 
 async def handle_first_message(bot, user):
