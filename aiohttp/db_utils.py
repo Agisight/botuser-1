@@ -186,7 +186,7 @@ async def add_mes_log(bot_id, bot_user_id, in_or_out, log, answer_whatsapp_api=N
     async with pool.acquire() as conn:
 
         query = "INSERT INTO cabinet_messagelog " \
-                "(bot_id, bot_user_id, in_or_out, log, answer_whatsapp_api, date_in) " \
+                "(bot_id, bot_user_id, in_or_out, log, answer_out_mes_request, date_in) " \
                 "VALUES " \
                 "($1, $2, $3, $4, $5, $6)"
 
