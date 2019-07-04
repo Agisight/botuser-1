@@ -454,7 +454,7 @@ async def handle_current_step(bot, user, update):
             else:
 
                 mes = {"type": "text",
-                       "text": element['fallback']}
+                       "text": element['data']['fallback']}
                 await send_message(bot, user, mes)
 
                 return None
