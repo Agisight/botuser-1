@@ -712,19 +712,11 @@ async def webhook(request):
 
         user = await get_user(bot['id'], chat_id)
 
-        # Логирование вебхука
-        await add_mes_log(bot['id'], user['id'], "in", json.dumps(update))
-
         if not user:
-
             user = await add_user(bot['id'], chat_id, first_name, last_name, username)
 
-            next_step = await handle_first_message(bot, user)
-
-            if next_step:
-                await update_user(bot['id'], chat_id, step=next_step)
-
-            return web.Response(text="OK")
+        # Логирование вебхука
+        await add_mes_log(bot['id'], user['id'], "in", json.dumps(update))
 
         # if text.lower() in [x.strip().lower() for x in bot['text_start'].split('|') if x]: # == "старт":
         if text.startswith('/start'):
