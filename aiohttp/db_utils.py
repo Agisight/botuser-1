@@ -20,7 +20,7 @@ async def add_user(bot_id, chat_id, first_name, last_name, username):
                 "($1, $2, $3, $4, $5, $6, $7) " \
                 "RETURNING *"
 
-        result = await conn.fetch(query, bot_id, chat_id, first_name, last_name, username, datetime.today())
+        result = await conn.fetch(query, bot_id, chat_id, first_name, last_name, username, None, datetime.today())
 
         if result:
             return result[0]
