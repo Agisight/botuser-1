@@ -104,8 +104,6 @@ async def send_message(bot, user, mes):
 
         tg_bot = Bot(token=bot['token'])
 
-        print(mes)
-
         if mes['type'] == "text":
             if mes['text']:
                 if 'keyboard' in mes:
@@ -138,7 +136,7 @@ async def send_message(bot, user, mes):
 
     finally:
 
-        await add_mes_log(bot['id'], user['id'], "out", json.dumps(mes), json.dumps(answer_tg_bot))
+        await add_mes_log(bot['id'], user['id'], "out", json.dumps(mes), str(answer_tg_bot))
 
 
 def find_screen(screen_id, data):
