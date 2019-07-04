@@ -713,6 +713,7 @@ async def webhook(request):
         user = await get_user(bot['id'], chat_id)
 
         if not user:
+            print(bot['id'], chat_id, first_name, last_name, username)
             user = await add_user(bot['id'], chat_id, first_name, last_name, username)
 
         # Логирование вебхука
