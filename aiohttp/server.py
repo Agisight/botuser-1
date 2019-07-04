@@ -104,6 +104,8 @@ async def send_message(bot, user, mes):
 
         tg_bot = Bot(token=bot['token'])
 
+        print(mes)
+
         if mes['type'] == "text":
             if mes['text']:
                 if 'keyboard' in mes:
