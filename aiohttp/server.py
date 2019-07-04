@@ -106,7 +106,15 @@ async def send_message(bot, user, mes):
 
         if mes['type'] == "text":
             if mes['text']:
-                keyboard = mes['keyboard'] if 'keyboard' in mes else None
+                if 'keyboard' in mes:
+                    if mes['keyboard']:
+                        buttons = []
+                        for button in mes['keyboard']:
+                            buttons.append(types.KeyboardButton(text=button))
+                        keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
+                        keyboard.add(*buttons)
+                    else:
+                        keyboard = types.ReplyKeyboardRemove()
                 answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'], reply_markup=keyboard)
         elif mes['type'] == "photo":
             if mes['photo']:
@@ -197,20 +205,9 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
             if element['type'] == 'menu':
 
-                text = element['data']['text']
-
-                if element['data']['value']:
-                    buttons = []
-                    for button in element['data']['value']:
-                        buttons.append(types.KeyboardButton(text=button['text']))
-                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
-                    keyboard.add(*buttons)
-                else:
-                    keyboard = types.ReplyKeyboardRemove()
-
                 mes = {"type": "text",
-                       "text": text,
-                       "keyboard": keyboard}
+                       "text": element['data']['text'],
+                       "keyboard": [button['text'] for button in element['data']['value']]}
 
                 await send_message(bot, user, mes)
 
@@ -218,9 +215,8 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
             elif element['type'] == 'text':
 
-                text = element['data']['text']
                 mes = {"type": "text",
-                       "text": text}
+                       "text": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
@@ -322,20 +318,9 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
 
             if element['type'] == 'menu':
 
-                text = element['data']['text']
-
-                if element['data']['value']:
-                    buttons = []
-                    for button in element['data']['value']:
-                        buttons.append(types.KeyboardButton(text=button['text']))
-                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
-                    keyboard.add(*buttons)
-                else:
-                    keyboard = types.ReplyKeyboardRemove()
-
                 mes = {"type": "text",
-                       "text": text,
-                       "keyboard": keyboard}
+                       "text": element['data']['text'],
+                       "keyboard": [button['text'] for button in element['data']['value']]}
 
                 await send_message(bot, user, mes)
 
@@ -343,9 +328,8 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
 
             elif element['type'] == 'text':
 
-                text = element['data']['text']
                 mes = {"type": "text",
-                       "text": text}
+                       "text": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
@@ -609,20 +593,9 @@ async def handle_first_message(bot, user):
 
             if element['type'] == 'menu':
 
-                text = element['data']['text']
-
-                if element['data']['value']:
-                    buttons = []
-                    for button in element['data']['value']:
-                        buttons.append(types.KeyboardButton(text=button['text']))
-                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
-                    keyboard.add(*buttons)
-                else:
-                    keyboard = types.ReplyKeyboardRemove()
-
                 mes = {"type": "text",
-                       "text": text,
-                       "keyboard": keyboard}
+                       "text": element['data']['text'],
+                       "keyboard": [button['text'] for button in element['data']['value']]}
 
                 await send_message(bot, user, mes)
 
@@ -630,9 +603,8 @@ async def handle_first_message(bot, user):
 
             elif element['type'] == 'text':
 
-                text = element['data']['text']
                 mes = {"type": "text",
-                       "text": text}
+                       "text": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
