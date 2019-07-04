@@ -112,7 +112,7 @@ class ForgotPassword(APIView):
                 user = None
 
             if user:
-                link = 'http://inbot24.ru/change_password/' + urlsafe_base64_encode(force_bytes(user.pk)).decode("utf-8") \
+                link = 'http://inbot24.ru/change_password/' + urlsafe_base64_encode(force_bytes(user.pk)) \
                        + '/' + default_token_generator.make_token(user)
 
                 r = requests.post("https://api.mailgun.net/v3/mail.inbot24.ru/messages",

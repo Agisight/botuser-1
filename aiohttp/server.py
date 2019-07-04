@@ -201,17 +201,27 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
             elif element['type'] == 'text':
 
-                mes = element['value']
+                text = element['data']['text']
+                mes = {"type": "text",
+                       "text": text}
 
                 await send_message(bot, user, mes)
 
             elif element['type'] == 'image':
 
-                await send_file(bot, user, element['value'], get_filename(element['value']), element['descr'])
+                file_url = ""
+                mes = {"type": "photo",
+                       "file_url": file_url}
 
-            elif element['type'] == 'file':
+                await send_message(bot, user, mes)
 
-                await send_file(bot, user, element['value'], get_filename(element['value']))
+            elif element['type'] == 'video':
+
+                file_url = ""
+                mes = {"type": "video",
+                       "file_url": file_url}
+
+                await send_message(bot, user, mes)
 
             # elif element['type'] == 'rewind':
             #
@@ -304,17 +314,27 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
 
             elif element['type'] == 'text':
 
-                mes = element['value']
+                text = element['data']['text']
+                mes = {"type": "text",
+                       "text": text}
 
                 await send_message(bot, user, mes)
 
             elif element['type'] == 'image':
 
-                await send_file(bot, user, element['value'], get_filename(element['value']), element['descr'])
+                file_url = ""
+                mes = {"type": "photo",
+                       "file_url": file_url}
 
-            elif element['type'] == 'file':
+                await send_message(bot, user, mes)
 
-                await send_file(bot, user, element['value'], get_filename(element['value']))
+            elif element['type'] == 'video':
+
+                file_url = ""
+                mes = {"type": "video",
+                       "file_url": file_url}
+
+                await send_message(bot, user, mes)
 
             # elif element['type'] == 'rewind':
             #
@@ -407,6 +427,8 @@ async def handle_current_step(bot, user, update):
             mes = {"type": "text", "text": "Ошибка! Нет информации в боте. Для того чтобы вернутся в начало, напишите /start"}
             await send_message(bot, user, mes)
             return None
+
+        text = update['message']['text']
 
         if element['type'] == 'menu':
 
@@ -566,7 +588,7 @@ async def handle_first_message(bot, user):
 
             elif element['type'] == 'text':
 
-                text = element['value']
+                text = element['data']['text']
                 mes = {"type": "text",
                        "text": text}
 
@@ -574,11 +596,19 @@ async def handle_first_message(bot, user):
 
             elif element['type'] == 'image':
 
-                await send_file(bot, user, element['value'], get_filename(element['value']), element['descr'])
+                file_url = ""
+                mes = {"type": "photo",
+                       "file_url": file_url}
+
+                await send_message(bot, user, mes)
 
             elif element['type'] == 'video':
 
-                await send_file(bot, user, element['value'], get_filename(element['value']))
+                file_url = ""
+                mes = {"type": "video",
+                       "file_url": file_url}
+
+                await send_message(bot, user, mes)
 
         return next_step
 
