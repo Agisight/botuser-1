@@ -143,7 +143,7 @@ class SetWebhookView(APIView):
 
             tg_bot = telebot.TeleBot(token=token)
 
-            res = tg_bot.set_webhook(url=f"https://inbot24.ru/bot_webhook/{token}/",
+            res = tg_bot.set_webhook(url=f"https://tgbot.inbot24.ru/bot_webhook/{token}/",
                                      certificate=open('/ssl/webhook_cert.pem'))
             bot.last_log_set_webhook = json.dumps(res)
 
