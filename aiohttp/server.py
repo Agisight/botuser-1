@@ -5,7 +5,7 @@ from db_utils import *
 import sys, os
 import json
 from datetime import datetime, timedelta
-from aiogram import Bot
+from aiogram import Bot, types
 import re
 
 import logging
@@ -106,11 +106,16 @@ async def send_message(bot, user, mes):
 
         if mes['type'] == "text":
             if mes['text']:
-                answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+                keyboard = mes['keyboard'] if 'keyboard' in mes else None
+                answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'], reply_markup=keyboard)
         elif mes['type'] == "photo":
-            answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+            if mes['photo']:
+                caption = mes['caption'] if mes['caption'] else None
+                answer_tg_bot = await tg_bot.send_photo(user['chat_id'], mes['photo'], caption=caption)
         elif mes['type'] == "video":
-            answer_tg_bot = await tg_bot.send_message(user['chat_id'], mes['text'])
+            if mes['video']:
+                caption = mes['caption'] if mes['caption'] else None
+                answer_tg_bot = await tg_bot.send_video(user['chat_id'], mes['video'], caption=caption)
 
     except Exception as e:
 
@@ -192,10 +197,22 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
             if element['type'] == 'menu':
 
-                mes = element['descr']
+                text = element['data']['text']
 
-                if mes:
-                    await send_message(bot, user, mes)
+                if element['data']['value']:
+                    buttons = []
+                    for button in element['data']['value']:
+                        buttons.append(types.KeyboardButton(text=button['text']))
+                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
+                    keyboard.add(*buttons)
+                else:
+                    keyboard = types.ReplyKeyboardRemove()
+
+                mes = {"type": "text",
+                       "text": text,
+                       "keyboard": keyboard}
+
+                await send_message(bot, user, mes)
 
                 return f"{next_screen_id}|{element['id']}"
 
@@ -209,17 +226,17 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
             elif element['type'] == 'image':
 
-                file_url = ""
                 mes = {"type": "photo",
-                       "file_url": file_url}
+                       "photo": element['data']['image'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
             elif element['type'] == 'video':
 
-                file_url = ""
                 mes = {"type": "video",
-                       "file_url": file_url}
+                       "video": element['data']['video'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
@@ -305,10 +322,22 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
 
             if element['type'] == 'menu':
 
-                mes = element['descr']
+                text = element['data']['text']
 
-                if mes:
-                    await send_message(bot, user, mes)
+                if element['data']['value']:
+                    buttons = []
+                    for button in element['data']['value']:
+                        buttons.append(types.KeyboardButton(text=button['text']))
+                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
+                    keyboard.add(*buttons)
+                else:
+                    keyboard = types.ReplyKeyboardRemove()
+
+                mes = {"type": "text",
+                       "text": text,
+                       "keyboard": keyboard}
+
+                await send_message(bot, user, mes)
 
                 return f"{screen['id']}|{element['id']}"
 
@@ -322,17 +351,17 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
 
             elif element['type'] == 'image':
 
-                file_url = ""
                 mes = {"type": "photo",
-                       "file_url": file_url}
+                       "photo": element['data']['image'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
             elif element['type'] == 'video':
 
-                file_url = ""
                 mes = {"type": "video",
-                       "file_url": file_url}
+                       "video": element['data']['video'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
@@ -432,16 +461,18 @@ async def handle_current_step(bot, user, update):
 
         if element['type'] == 'menu':
 
-            for value in element['value']:
+            for value in element['data']['value']:
                 if value['text'] == text:
                 #if text.lower() in [x.strip().lower() for x in value['text'].split('|') if x]:
                     next_screen_id = value['id']
                     return await handle_next_screen(bot, user, next_screen_id, is_loop_check)
             else:
-                if 'fallback' in element:
-                    if element['fallback']:
-                        return None, "ERROR", element['fallback']
-                return None, "ERROR", "Выберите пункт меню из доступных вариантов."
+
+                mes = {"type": "text",
+                       "text": element['fallback']}
+                await send_message(bot, user, mes)
+
+                return None
 
         # elif element['type'] == 'rewind':
         #
@@ -578,9 +609,20 @@ async def handle_first_message(bot, user):
 
             if element['type'] == 'menu':
 
-                text = element['descr']
+                text = element['data']['text']
+
+                if element['data']['value']:
+                    buttons = []
+                    for button in element['data']['value']:
+                        buttons.append(types.KeyboardButton(text=button['text']))
+                    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=2)
+                    keyboard.add(*buttons)
+                else:
+                    keyboard = types.ReplyKeyboardRemove()
+
                 mes = {"type": "text",
-                       "text": text}
+                       "text": text,
+                       "keyboard": keyboard}
 
                 await send_message(bot, user, mes)
 
@@ -596,17 +638,17 @@ async def handle_first_message(bot, user):
 
             elif element['type'] == 'image':
 
-                file_url = ""
                 mes = {"type": "photo",
-                       "file_url": file_url}
+                       "photo": element['data']['image'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
             elif element['type'] == 'video':
 
-                file_url = ""
                 mes = {"type": "video",
-                       "file_url": file_url}
+                       "video": element['data']['video'],
+                       "caption": element['data']['text']}
 
                 await send_message(bot, user, mes)
 
