@@ -106,6 +106,7 @@ async def send_message(bot, user, mes):
 
         if mes['type'] == "text":
             if mes['text']:
+                keyboard = None
                 if 'keyboard' in mes:
                     if mes['keyboard']:
                         buttons = []
@@ -119,11 +120,11 @@ async def send_message(bot, user, mes):
         elif mes['type'] == "photo":
             if mes['photo']:
                 caption = mes['caption'] if mes['caption'] else None
-                answer_tg_bot = answer_tg_bot = await tg_bot.send_photo(user['chat_id'], mes['photo'], caption=caption)
+                answer_tg_bot = await tg_bot.send_photo(user['chat_id'], mes['photo'], caption=caption)
         elif mes['type'] == "video":
             if mes['video']:
                 caption = mes['caption'] if mes['caption'] else None
-                answer_tg_bot = answer_tg_bot = await tg_bot.send_video(user['chat_id'], mes['video'], caption=caption)
+                answer_tg_bot = await tg_bot.send_video(user['chat_id'], mes['video'], caption=caption)
 
     except Exception as e:
 
