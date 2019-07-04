@@ -40,6 +40,8 @@ from django.utils.encoding import force_bytes
 
 from rest_framework_simplejwt.tokens import RefreshToken
 
+import requests
+
 from django.template.defaultfilters import date as _date
 from django.core.paginator import Paginator
 from django.db.models import Count, Min, Sum, Avg
