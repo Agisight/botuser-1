@@ -673,6 +673,13 @@ async def webhook(request):
         print(bot)
 
         # ---- проверка доступа ----
+
+        if not bot['is_active']:
+            return web.Response(text="OK")
+
+        if bot['status'] == 'off':
+            return web.Response(text="OK")
+
         # if bot['podpiska_do'] < datetime.today().date():
         #     return web.Response(text="OK")
         #
