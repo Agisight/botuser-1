@@ -14,7 +14,7 @@ async def init_db():
 async def add_user(bot_id, chat_id, first_name, last_name, username):
     async with pool.acquire() as conn:
 
-        query = "INSERT INTO bot_botuser " \
+        query = "INSERT INTO cabinet_botuser " \
                 "(bot_id, chat_id, first_name, last_name, username, step, date_in) " \
                 "VALUES " \
                 "($1, $2, $3, $4, $5, $6, $7) " \
@@ -42,7 +42,7 @@ async def update_user(bot_id, chat_id, **kwargs):
         var_number += 1
         vars.append(kwargs[key])
 
-    sql_query = "UPDATE bot_botuser SET %s WHERE bot_id = $%d AND chat_id = $%d" % (sql_str[0:-1], var_number, var_number + 1)
+    sql_query = "UPDATE cabinet_botuser SET %s WHERE bot_id = $%d AND chat_id = $%d" % (sql_str[0:-1], var_number, var_number + 1)
     vars.append(bot_id)
     vars.append(chat_id)
 
@@ -52,7 +52,7 @@ async def update_user(bot_id, chat_id, **kwargs):
 
 async def get_settings():
     async with pool.acquire() as conn:
-        result = await conn.fetch('SELECT * FROM bot_settings LIMIT 1')
+        result = await conn.fetch('SELECT * FROM cabinet_settings LIMIT 1')
         if not result:
             return []
         else:
