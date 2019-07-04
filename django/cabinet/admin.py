@@ -4,23 +4,22 @@ from .models import *
 
 @admin.register(Bot)
 class BotAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('user', 'name', 'is_active', 'podpiska_do', 'token', 'status', 'date_in',)
 
 
 @admin.register(BotUser)
 class BotUserAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('bot', 'chat_id', 'first_name', 'last_name', 'username', 'step', 'date_in')
 
 
-@admin.register(Compaign)
-class CompaignAdmin(admin.ModelAdmin):
-    pass
+# @admin.register(Compaign)
+# class CompaignAdmin(admin.ModelAdmin):
+#     pass
 
 
 @admin.register(MessageLog)
 class MessageLogAdmin(admin.ModelAdmin):
-    pass
-
+    list_display = ('bot', 'bot_user', 'in_or_out', 'log', 'answer_out_mes_request', 'date_in')
 
 # class BotUserAdmin(admin.ModelAdmin):
 #     list_display = ('bot', 'chat_id', 'step', 'name', 'phone', 'date_in')

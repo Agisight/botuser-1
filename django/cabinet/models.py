@@ -78,7 +78,7 @@ class BotUser(models.Model):
     date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
 
     def __str__(self):
-        return self.chat_id
+        return str(self.chat_id)
 
     class Meta:
         verbose_name = 'TelegramBot User'
