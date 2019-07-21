@@ -16,7 +16,7 @@ class Bot(models.Model):
     name = models.CharField(max_length=255)
 
     is_active = models.BooleanField(default=False)
-    podpiska_do = models.DateField(auto_now_add=False, auto_now=False, null=True, blank=True)
+    podpiska_do = models.DateTimeField(auto_now_add=False, auto_now=False, null=True, blank=True)
 
     token = models.CharField(max_length=120, null=True, blank=True)
     set_webhook = models.BooleanField(default=False)

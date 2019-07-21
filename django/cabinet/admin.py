@@ -14,7 +14,7 @@ class BotUserAdmin(admin.ModelAdmin):
 
 @admin.register(Compaign)
 class CompaignAdmin(admin.ModelAdmin):
-    list_display = ('bot', 'test', 'status', 'date_in')
+    list_display = ('bot', 'text', 'status', 'date_in')
 
 
 @admin.register(MessageLog)
