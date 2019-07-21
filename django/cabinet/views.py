@@ -314,9 +314,16 @@ class BotUserView(generics.ListAPIView):
             if not bot.podpiska_do:
                 return Response(None)
 
-            queryset = BotUser.objects.filter(bot=bot).order_by('id')
-            serializer = BotUserSerializer(queryset, many=True)
-            return Response(serializer.data)
+            self.queryset = BotUser.objects.filter(bot=bot).order_by('id')
+            #serializer = BotUserSerializer(queryset, many=True)
+            self.serializer_class = BotUserSerializer
+
+            return super().list(self, request)
+
+            #page = self.paginate_queryset(serializer.data)
+            #return self.get_paginated_response(page)
+
+            # return Response(serializer.data)
 
         except Exception as e:
 
