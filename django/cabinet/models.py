@@ -118,7 +118,7 @@ class Compaign(models.Model):
     photo = models.ImageField(upload_to='compaign/', null=True, blank=True)
     video = models.FileField(upload_to='compaign/', null=True, blank=True)
 
-    status = models.CharField(max_length=120, null=True, blank=True, choices=(
+    status = models.CharField(max_length=120, default='created', null=True, blank=True, choices=(
         ('created', 'Создана'),
         ('in_progress', 'Выполняется'),
         ('success', 'Успешно'),

@@ -160,7 +160,7 @@ class BotListCreateView(generics.ListCreateAPIView):
         serializer = self.get_serializer(data=request.data)
 
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(user=request.user)
             return Response(serializer.data)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -393,23 +393,41 @@ class CompaignListCreateView(generics.ListCreateAPIView):
 
     def create(self, request, bot_id):
 
-        bot = Bot.objects.get(id=bot_id)
+        try:
 
-        if bot.user.id != request.user.id:
-            return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
+            bot = Bot.objects.get(id=bot_id)
 
-        if not bot.podpiska_do:
-            return Response(None)
+            if bot.user.id != request.user.id:
+                return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
-        self.serializer_class = CompaignCreateSerializer
-        serializer = self.get_serializer(data=request.data)
+            if not bot.podpiska_do:
+                return Response(None)
 
-        if serializer.is_valid():
+            print(request.data)
+            print(bot)
 
-            serializer.save({"bot": bot})
-            return Response(serializer.data)
+            self.serializer_class = CompaignCreateSerializer
+            serializer = self.get_serializer(data=request.data)
 
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            print(serializer)
+
+            if serializer.is_valid(raise_exception=True):
+                # {"bot": bot}
+                serializer.save(bot=bot)
+                return Response(serializer.data)
+
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(exc_type, fname, exc_tb.tb_lineno)
+            print(str(e))
+            logging.error("CompaignListCreateView create {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+            data = {"status": "error"}
+            return Response(data)
 
 
 #

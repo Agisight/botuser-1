@@ -32,9 +32,9 @@ class BotCreateSerializer(serializers.ModelSerializer):
         model = Bot
         fields = ('id', 'name', )
 
-    def create(self, validated_data):
-        validated_data['user'] = self.context['request'].user
-        return super(BotCreateSerializer, self).create(validated_data)
+    # def create(self, validated_data):
+    #     validated_data['user'] = self.context['request'].user
+    #     return super(BotCreateSerializer, self).create(validated_data)
 
 
 class BotUpdateSerializer(serializers.ModelSerializer):
@@ -47,7 +47,7 @@ class BotUpdateSerializer(serializers.ModelSerializer):
 class CompaignListSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
     class Meta:
-        model = Bot
+        model = Compaign
         fields = ('id', 'text', 'photo', 'status', 'date_in', )
 
 
@@ -55,9 +55,5 @@ class CompaignCreateSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
     id = serializers.ReadOnlyField()
     class Meta:
-        model = Bot
+        model = Compaign
         fields = ('id', 'bot', 'text', 'status', 'date_in', )
-
-    # def create(self, validated_data):
-    #     validated_data['user'] = self.context['request'].user
-    #     return super(BotCreateSerializer, self).create(validated_data)
