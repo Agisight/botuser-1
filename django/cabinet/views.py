@@ -315,15 +315,9 @@ class BotUserView(generics.ListAPIView):
                 return Response(None)
 
             self.queryset = BotUser.objects.filter(bot=bot).order_by('id')
-            #serializer = BotUserSerializer(queryset, many=True)
             self.serializer_class = BotUserSerializer
 
             return super().list(self, request)
-
-            #page = self.paginate_queryset(serializer.data)
-            #return self.get_paginated_response(page)
-
-            # return Response(serializer.data)
 
         except Exception as e:
 
@@ -392,9 +386,10 @@ class CompaignListCreateView(generics.ListCreateAPIView):
             return Response(None)
 
         # Note the use of `get_queryset()` instead of `self.queryset`
-        queryset = Compaign.objects.filter(bot=bot).order_by('id')
-        serializer = CompaignListCreateView(queryset, many=True)
-        return Response(serializer.data)
+        self.queryset = Compaign.objects.filter(bot=bot).order_by('id')
+        self.serializer_class = CompaignListSerializer
+
+        return super().list(self, request)
 
     def create(self, request, bot_id):
 
@@ -410,7 +405,8 @@ class CompaignListCreateView(generics.ListCreateAPIView):
         serializer = self.get_serializer(data=request.data)
 
         if serializer.is_valid():
-            serializer.save()
+
+            serializer.save({"bot": bot})
             return Response(serializer.data)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

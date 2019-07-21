@@ -56,8 +56,8 @@ class CompaignCreateSerializer(serializers.ModelSerializer):
     id = serializers.ReadOnlyField()
     class Meta:
         model = Bot
-        fields = ('id', 'name', )
+        fields = ('id', 'bot', 'text', 'status', 'date_in', )
 
-    def create(self, validated_data):
-        validated_data['user'] = self.context['request'].user
-        return super(BotCreateSerializer, self).create(validated_data)
+    # def create(self, validated_data):
+    #     validated_data['user'] = self.context['request'].user
+    #     return super(BotCreateSerializer, self).create(validated_data)
