@@ -412,7 +412,7 @@ class CompaignListCreateView(generics.ListCreateAPIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
+#
 # def compaign(request, bot_id):
 #
 #     if not request.user.is_authenticated:
