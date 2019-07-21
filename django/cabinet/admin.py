@@ -12,9 +12,9 @@ class BotUserAdmin(admin.ModelAdmin):
     list_display = ('bot', 'chat_id', 'first_name', 'last_name', 'username', 'step', 'date_in')
 
 
-# @admin.register(Compaign)
-# class CompaignAdmin(admin.ModelAdmin):
-#     pass
+@admin.register(Compaign)
+class CompaignAdmin(admin.ModelAdmin):
+    list_display = ('bot', 'test', 'status', 'date_in')
 
 
 @admin.register(MessageLog)

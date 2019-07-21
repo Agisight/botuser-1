@@ -34,6 +34,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
+from rest_framework.pagination import PageNumberPagination
 
 from django.contrib.auth.tokens import PasswordResetTokenGenerator, default_token_generator
 from django.utils import six
@@ -86,6 +87,10 @@ def random_id():
 
 # TODO
 # add permission class bot contains user
+
+
+class StandartPagination(PageNumberPagination):
+    page_size = 20
 
 
 class IndexCabinetView(TemplateView):
@@ -296,6 +301,7 @@ class UploadFile(APIView):
 
 class BotUserView(generics.ListAPIView):
     permission_classes = (IsAuthenticated,)
+    pagination_class = StandartPagination
 
     def list(self, request, bot_id):
         try:
@@ -366,6 +372,7 @@ class AnalyticsView(APIView):
 
 class CompaignListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
+    pagination_class = StandartPagination
 
     def list(self, request, bot_id):
 
