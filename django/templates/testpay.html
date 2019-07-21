@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+
+
+</head>
+<body>
+
+<script>
+    this.pay = function () {
+    var widget = new cp.CloudPayments();
+    var receipt = {
+            Items: [//товарные позиции
+                 {
+                    label: 'Наименование товара 3', //наименование товара
+                    price: 300.00, //цена
+                    quantity: 3.00, //количество
+                    amount: 900.00, //сумма
+                    vat: 20, //ставка НДС
+                    method: 0, // тег-1214 признак способа расчета - признак способа расчета
+                    object: 0, // тег-1212 признак предмета расчета - признак предмета товара, работы, услуги, платежа, выплаты, иного предмета расчета
+                }
+            ],
+            taxationSystem: 0, //система налогообложения; необязательный, если у вас одна система налогообложения
+            email: 'user@example.com', //e-mail покупателя, если нужно отправить письмо с чеком
+            phone: '', //телефон покупателя в любом формате, если нужно отправить сообщение со ссылкой на чек
+            isBso: false, //чек является бланком строгой отчётности
+            amounts:
+            {
+                electronic: 900.00, // Сумма оплаты электронными деньгами
+                advancePayment: 0.00, // Сумма из предоплаты (зачетом аванса) (2 знака после запятой)
+                credit: 0.00, // Сумма постоплатой(в кредит) (2 знака после запятой)
+                provision: 0.00 // Сумма оплаты встречным предоставлением (сертификаты, др. мат.ценности) (2 знака после запятой)
+            }
+        };
+
+    var data = {};
+    data.cloudPayments = {recurrent: { interval: 'Month', period: 1, customerReceipt: receipt}}; //создание ежемесячной подписки
+
+    widget.charge({ // options
+        publicId: 'pk_7c46c71397f4579d81b068cd208bb', //id из личного кабинета
+        description: 'Подписка на ежемесячный доступ к сайту example.com', //назначение
+        amount: 1, //сумма
+        currency: 'RUB', //валюта
+        invoiceId: '1234567', //номер заказа  (необязательно)
+        accountId: 'user@example.com', //идентификатор плательщика (обязательно для создания подписки)
+        data: data
+    },
+    function (options) { // success
+        //действие при успешной оплате
+    },
+    function (reason, options) { // fail
+        //действие при неуспешной оплате
+    });
+};
+
+
+$(function ()
+{
+    $('#checkout').click(pay);
+
+});
+
+
+</script>
+
+
+<button id="checkout">оплатить</button>
+
+</body>
+</html>

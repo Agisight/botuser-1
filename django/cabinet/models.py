@@ -73,6 +73,8 @@ class BotUser(models.Model):
 
     step = models.CharField(max_length=255, null=True, blank=True)
 
+    otpiska = models.BooleanField(default=False)
+
     # variables = JSONField(null=True, blank=True)
 
     date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
@@ -113,8 +115,8 @@ class Compaign(models.Model):
     # ))
 
     text = models.TextField(null=True, blank=True)
-    # photo = models.ImageField(null=True, blank=True)
-    file = models.FileField(null=True, blank=True)
+    photo = models.ImageField(upload_to='compaign/', null=True, blank=True)
+    video = models.FileField(upload_to='compaign/', null=True, blank=True)
 
     status = models.CharField(max_length=120, null=True, blank=True, choices=(
         ('created', 'Создана'),

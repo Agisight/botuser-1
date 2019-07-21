@@ -24,6 +24,13 @@ urlpatterns = [
 
     path('api/set_webhook/<int:bot_id>/', SetWebhookView.as_view(), name='set-webhook'),
 
+    path('api/botusers/<int:bot_id>/', BotUserView.as_view(), name='bot-users'),
+    path('api/analytics/<int:bot_id>/', AnalyticsView.as_view(), name='analytics'),
+    path('api/compaign_list/<int:bot_id>/', CompaignListCreateView.as_view(), name='compaign-list'),
+
+    path('test/', TestView.as_view(), name='test-view'),
+    path('cloudpayments_status/', CloudpaymentsStatusView.as_view(), name='cloudpayments-status-view'),
+
     re_path(r'^', IndexCabinetView.as_view(), name='index-view'),
 
 ]
