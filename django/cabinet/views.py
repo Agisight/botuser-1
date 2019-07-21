@@ -520,3 +520,4 @@ class CompaignListCreateView(generics.ListCreateAPIView):
 #         logging.error("create_compaign {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 #
 #         return JsonResponse({"error": "some error"})
+#
