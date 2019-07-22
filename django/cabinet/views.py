@@ -403,16 +403,10 @@ class CompaignListCreateView(generics.ListCreateAPIView):
             if not bot.podpiska_do:
                 return Response(None)
 
-            print(request.data)
-            print(bot)
-
             self.serializer_class = CompaignCreateSerializer
             serializer = self.get_serializer(data=request.data)
 
-            print(serializer)
-
-            if serializer.is_valid(raise_exception=True):
-                # {"bot": bot}
+            if serializer.is_valid():
                 serializer.save(bot=bot)
                 return Response(serializer.data)
 

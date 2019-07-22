@@ -141,89 +141,41 @@ async def make_compaign(bot, compaign):
         if not c:
             return
 
-        next_step = None
-        if compaign['next_step']:
-            screen_id = compaign['next_step']
-            data = json.loads(bot['data'])
-            screen = find_screen(screen_id, data)
-            if not screen:
-                await update_compaign(compaign['id'], status='error')
-                return
-            menu_element = find_menu_element_in_screen(screen)
-            if not menu_element:
-                await update_compaign(compaign['id'], status='error')
-                return
-            element_id = menu_element['id']
+        await update_compaign(compaign['id'], is_done=True, status='in_progress')
 
-            next_step = f"{screen_id}|{element_id}"
+        # limit = 100
+        # offset = 0
+        # offset += limit
 
+        sleep_sec = 0.5
+        if compaign['max_mes_per_hour']:
+            sleep_sec = (60 * 60) / compaign['max_mes_per_hour']
 
-        if compaign['delay']:
+        users = await get_users(bot, compaign['from_date_signup'], compaign['to_date_signup'])
 
-            if compaign['status'] != 'in_progress':
-                await update_compaign(compaign['id'], status='in_progress')
+        for user in users:
 
-            received_compaign = compaign['received_compaign'].split(',')
+            if compaign['activity'] in ['cold', 'active', 'hot']:
 
-            # !!! sql injection delay get_users_for_delay
-            users = await get_users_for_delay(bot, received_compaign, compaign['delay'])
+                activity = await get_activity(bot, user)
 
-            new_received_compaign = ""
+                if compaign['activity'] == 'cold' and activity != 1:
+                    continue
+                elif compaign['activity'] == 'active' and activity not in [2, 3, 4]:
+                    continue
+                elif compaign['activity'] == 'hot' and activity < 5:
+                    continue
 
-            for user in users:
-                print(str(user["chat_id"]) + 'send')
-                await send_message(bot, user, compaign)
-                new_received_compaign += user['phone'] + ","
-                if next_step:
-                    await update_user(bot['id'], user['chat_id'], step=next_step)
-                await asyncio.sleep(0.4)
+            print(str(user["chat_id"]) + 'send')
+            #if user["chat_id"] == "380635275370@c.us":
+            await send_message(bot, user, compaign)
 
-            await update_compaign(compaign['id'],
-                                  received_compaign=compaign['received_compaign'] + new_received_compaign)
+            if next_step:
+                await update_user(bot['id'], user['chat_id'], step=next_step)
 
-        else:
+            await asyncio.sleep(sleep_sec)
 
-            # activity = models.CharField(max_length=120, null=True, blank=True)
-            # next_step = models.CharField(max_length=250, null=True, blank=True)
-            # max_mes_per_hour = models.IntegerField(null=True, blank=True)
-            # from_date_signup = models.DateTimeField(auto_now_add=False, auto_now=False, null=True, blank=True)
-            # to_date_signup = models.DateTimeField(auto_now_add=False, auto_now=False, null=True, blank=True)
-
-            await update_compaign(compaign['id'], is_done=True, status='in_progress')
-
-            # limit = 100
-            # offset = 0
-            # offset += limit
-
-            sleep_sec = 0.5
-            if compaign['max_mes_per_hour']:
-                sleep_sec = (60 * 60) / compaign['max_mes_per_hour']
-
-            users = await get_users(bot, compaign['from_date_signup'], compaign['to_date_signup'])
-
-            for user in users:
-
-                if compaign['activity'] in ['cold', 'active', 'hot']:
-
-                    activity = await get_activity(bot, user)
-
-                    if compaign['activity'] == 'cold' and activity != 1:
-                        continue
-                    elif compaign['activity'] == 'active' and activity not in [2, 3, 4]:
-                        continue
-                    elif compaign['activity'] == 'hot' and activity < 5:
-                        continue
-
-                print(str(user["chat_id"]) + 'send')
-                #if user["chat_id"] == "380635275370@c.us":
-                await send_message(bot, user, compaign)
-
-                if next_step:
-                    await update_user(bot['id'], user['chat_id'], step=next_step)
-
-                await asyncio.sleep(sleep_sec)
-
-            await update_compaign(compaign['id'], status='success')
+        await update_compaign(compaign['id'], status='success')
 
     except Exception as e:
 
