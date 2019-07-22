@@ -143,7 +143,7 @@ class CloudpaymentsStatusView(APIView):
 # "price":300,"quantity":3,"amount":900,"vat":20,"method":0,"object":0}],"taxationSystem":0,"email":"user@example.com",
 # "phone":"","isBso":false,"amounts":{"electronic":900,"advancePayment":0,"credit":0,"provision":0}}}}}'],
 # 'TotalFee': ['0.04'], 'CardProduct': ['MCS']}>
-
+#
 
 class BotListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
