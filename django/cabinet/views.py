@@ -26,7 +26,6 @@ from django.db.models import Sum, Avg, Count
 from django.db.models.functions import TruncMonth, TruncDay, TruncQuarter, ExtractWeek, ExtractDay, ExtractMonth, ExtractQuarter, ExtractYear
 from django.template.defaultfilters import date as _date
 
-
 import os
 import sys
 
@@ -53,6 +52,7 @@ from django.views.generic.base import TemplateView
 
 from rest_framework import generics
 from rest_framework import status
+
 
 import logging
 logging.basicConfig(filename="/botproject/log.txt", level=logging.ERROR)
@@ -112,9 +112,10 @@ class CloudpaymentsStatusView(APIView):
             print(request.body)
             print(request.POST)
 
-            data = json.loads(request.body)
+            logging.error(str(request.body))
 
-            print(data)
+            #data = json.loads(request.body)
+            #print(data)
 
             return Response({"status": "OK"})
 
@@ -125,7 +126,7 @@ class CloudpaymentsStatusView(APIView):
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(exc_type, fname, exc_tb.tb_lineno)
             print(str(e))
-            logging.error("UpdateKurs {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+            logging.error("CloudpaymentsStatusView {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 
             data = {"status": "error",
                     "description": "some error, pls contact support"}

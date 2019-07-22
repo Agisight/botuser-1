@@ -17,7 +17,7 @@
         bot_id: 1
     };
 
-    data.cloudPayments = {recurrent: { interval: 'Month', period: 1}}; //создание ежемесячной подписки
+    data.cloudPayments = {recurrent: { interval: 'Day', period: 1}}; //создание ежемесячной подписки
 
     widget.charge({ // options
         publicId: 'pk_7c46c71397f4579d81b068cd208bb', //id из личного кабинета
@@ -25,7 +25,7 @@
         amount: 2, //сумма
         currency: 'RUB', //валюта
         invoiceId: '1563797293', //номер заказа  (необязательно)
-        accountId: 'user@example.com', //идентификатор плательщика (обязательно для создания подписки)
+        accountId: 'user@qweasd.com', //идентификатор плательщика (обязательно для создания подписки)
         data: data
     },
     function (options) { // success
