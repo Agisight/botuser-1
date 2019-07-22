@@ -9,12 +9,14 @@
 <body>
 
 <script>
+
     this.pay = function () {
     var widget = new cp.CloudPayments();
 
     var data = {
-        bot_id = 1
+        bot_id: 1
     };
+
     data.cloudPayments = {recurrent: { interval: 'Month', period: 1}}; //создание ежемесячной подписки
 
     widget.charge({ // options
@@ -35,15 +37,11 @@
 };
 
 
-$(function ()
-{
+$(function () {
     $('#checkout').click(pay);
-
 });
 
-
 </script>
-
 
 <button id="checkout">оплатить</button>
 
