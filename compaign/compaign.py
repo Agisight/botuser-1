@@ -90,7 +90,7 @@ async def check_podpiska():
             print(str(e))
             logging.error("check_podpiska {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 
-        await asyncio.sleep(20)
+        await asyncio.sleep(60)
 
 
 async def check_compaign():

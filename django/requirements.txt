@@ -26,3 +26,4 @@ djangorestframework
 markdown
 django-filter
 vk
+python-dateutil
