@@ -1,0 +1,548 @@
+WARNING:django.request:Bad Request: /api/set_webhook/115/
+WARNING:django.request:Unauthorized: /api/token/
+WARNING:django.request:Unauthorized: /api/token/
+WARNING:django.request:Unauthorized: /api/token/
+WARNING:django.request:Unauthorized: /api/token/
+WARNING:django.request:Not Found: /admin/config.php
+WARNING:django.request:Not Found: /admin/config.php
+WARNING:django.request:Not Found: /admin/kcfinder/browse.php
+WARNING:django.request:Not Found: /administrator
+WARNING:django.request:Not Found: /administrator
+WARNING:django.request:Not Found: /admin/connection/
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+ERROR:root:UpdateKurs <class 'json.decoder.JSONDecodeError'> views.py 110 
+ Expecting value: line 1 column 1 (char 0)
+WARNING:django.request:Not Found: /admin/config.php
+WARNING:django.request:Not Found: /admin/config.php
+WARNING:django.request:Method Not Allowed: /api/token/
+WARNING:django.request:Unauthorized: /api/botusers/114/
+WARNING:django.request:Bad Request: /api/botusers/111/
+ERROR:root:BotUserView <class 'rest_framework.exceptions.NotFound'> views.py 321 
+ Неправильная страница
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 407, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:django.request:Internal Server Error: /api/compaign_list/114/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/botproject/cabinet/views.py", line 410, in create
+    print(serializer)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 538, in __repr__
+    return unicode_to_repr(representation.serializer_repr(self, indent=1))
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/representation.py", line 83, in serializer_repr
+    fields = serializer.fields
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `bot` is not valid for model `Bot`.
+ERROR:root:CompaignListCreateView create <class 'django.core.exceptions.ImproperlyConfigured'> views.py 412 
+ Field name `bot` is not valid for model `Bot`.
+ERROR:root:CompaignListCreateView create <class 'TypeError'> views.py 416 
+ save() takes 1 positional argument but 2 were given
+WARNING:django.request:Unauthorized: /api/compaign_list/114/
+WARNING:django.request:Not Found: /admin/cabinet/compaign/
+WARNING:django.request:Not Found: /admin/cabinet/compaign/
+WARNING:django.request:Not Found: /admin/cabinet/compaign/

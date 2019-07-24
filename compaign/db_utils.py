@@ -70,12 +70,40 @@ async def update_compaign(compaign_id, **kwargs):
         return await conn.fetch(sql_query, *vars)
 
 
+async def update_bot(bot_id, **kwargs):
+
+    if not kwargs:
+        return
+
+    sql_str = ''
+    var_number = 1
+    vars = []
+
+    for key in kwargs:
+
+        sql_str += key + "=$%d," % var_number
+        var_number += 1
+        vars.append(kwargs[key])
+
+    sql_query = "UPDATE bot_bot SET %s WHERE id = $%d" % (sql_str[0:-1], var_number)
+    vars.append(bot_id)
+
+    async with pool.acquire() as conn:
+        return await conn.fetch(sql_query, *vars)
+
+
+
 async def get_bot(bot_id):
     async with pool.acquire() as conn:
         result = await conn.fetch('SELECT * FROM bot_bot WHERE id = $1', bot_id)
         if result:
             return result[0]
         return result
+
+
+async def get_old_podpiska_bots():
+    async with pool.acquire() as conn:
+        return await conn.fetch('SELECT * FROM bot_bot WHERE podpiska_do < $1', datetime.today())
 
 
 async def get_compaign(compaign_id):

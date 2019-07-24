@@ -14,18 +14,18 @@
     var widget = new cp.CloudPayments();
 
     var data = {
-        bot_id: 1
+        bot_id: {bot_id}
     };
 
-    data.cloudPayments = {recurrent: { interval: 'Day', period: 1}}; //создание ежемесячной подписки
+    data.cloudPayments = {recurrent: { interval: 'Month', period: 1}}; //создание ежемесячной подписки
 
     widget.charge({ // options
         publicId: 'pk_7c46c71397f4579d81b068cd208bb', //id из личного кабинета
-        description: 'Подписка на ежемесячный доступ к боту id=114 (Название бота) inbot24.ru', //назначение
-        amount: 2, //сумма
+        description: {description} //назначение
+        amount: {amount}, //сумма
         currency: 'RUB', //валюта
-        invoiceId: '1563797293', //номер заказа  (необязательно)
-        accountId: 'user@qweasd.com', //идентификатор плательщика (обязательно для создания подписки)
+        invoiceId: {invoiceId}, //номер заказа  (необязательно)
+        accountId: {accountId}, //идентификатор плательщика (обязательно для создания подписки)
         data: data
     },
     function (options) { // success

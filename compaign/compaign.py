@@ -71,6 +71,28 @@ async def send_file_message(api_key, api_url, chat_id, file_url, filename):
         logging.error("send_file_message {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 
 
+async def check_podpiska():
+    while True:
+
+        try:
+
+            bots = await get_old_podpiska_bots()
+
+            for bot in bots:
+                await update_bot(bot['id'], podpiska_do=None)
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(exc_type, fname, exc_tb.tb_lineno)
+            print(str(e))
+            logging.error("check_podpiska {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+        await asyncio.sleep(20)
+
+
 async def check_compaign():
     while True:
 
@@ -92,6 +114,8 @@ async def check_compaign():
             logging.error("check_compaign {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
 
         await asyncio.sleep(20)
+
+
 
 
 def find_screen(screen_id, data):
@@ -215,6 +239,7 @@ try:
     loop.run_until_complete(init_db())
 
     # asyncio.ensure_future(check_compaign(), loop=loop)
+    asyncio.ensure_future(check_podpiska(), loop=loop)
 
     loop.run_forever()
 

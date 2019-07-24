@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     'django_hosts',
     'rest_framework',
+    'solo',
 ]
 
 

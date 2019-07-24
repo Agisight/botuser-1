@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import *
-
+from solo.admin import SingletonModelAdmin
 
 @admin.register(Bot)
 class BotAdmin(admin.ModelAdmin):
@@ -20,6 +20,22 @@ class CompaignAdmin(admin.ModelAdmin):
 @admin.register(MessageLog)
 class MessageLogAdmin(admin.ModelAdmin):
     list_display = ('bot', 'bot_user', 'in_or_out', 'log', 'answer_out_mes_request', 'date_in')
+
+
+@admin.register(Config)
+class ConfigAdmin(SingletonModelAdmin):
+    pass
+
+
+@admin.register(Subscription)
+class SubscriptionAdmin(admin.ModelAdmin):
+    list_display = ('bot', 'subscription_id', 'date_in')
+
+
+@admin.register(Payment)
+class PaymentAdmin(admin.ModelAdmin):
+    list_display = ('subscription', 'transaction_id', 'amount', 'date_in')
+
 
 # class BotUserAdmin(admin.ModelAdmin):
 #     list_display = ('bot', 'chat_id', 'step', 'name', 'phone', 'date_in')

@@ -11,8 +11,6 @@ import re
 import logging
 logging.basicConfig(filename="/aiohttp/log.txt", level=logging.ERROR)
 
-from dotenv import load_dotenv
-load_dotenv('/aiohttp/main_config/.env')
 import requests
 
 # TODO

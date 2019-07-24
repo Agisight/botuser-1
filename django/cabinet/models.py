@@ -4,6 +4,7 @@ from django.contrib.postgres.fields import JSONField
 import json
 import requests
 from datetime import datetime, timedelta
+from solo.models import SingletonModel
 import telebot
 
 User = get_user_model()
@@ -32,6 +33,11 @@ class Bot(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def str_podpiska_do(self):
+        return self.podpiska_do.strftime('%d.%m.%Y %H:%M')
+        # podpiska_do = (bot.podpiska_do + timedelta(hours=3)).strftime('%d.%m.%Y')
 
     class Meta:
         verbose_name = 'Бот'
@@ -161,3 +167,42 @@ class MessageLog(models.Model):
         verbose_name = 'Логи'
         verbose_name_plural = 'Логи'
 
+
+class Subscription(models.Model):
+
+    subscription_id = models.CharField(max_length=255, unique=True)
+    bot = models.ForeignKey(Bot, on_delete=models.CASCADE)
+    date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Подписка'
+        verbose_name_plural = 'Подписки'
+
+
+class Payment(models.Model):
+
+    subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
+    transaction_id = models.BigIntegerField(unique=True)
+    amount = models.FloatField(null=True, blank=True)
+    date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Оплата'
+        verbose_name_plural = 'Оплаты'
+
+
+class Config(SingletonModel):
+
+    bot_price = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return "Настройки"
+
+    class Meta:
+        verbose_name = "Настройки"

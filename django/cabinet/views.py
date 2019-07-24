@@ -29,6 +29,8 @@ from django.template.defaultfilters import date as _date
 import os
 import sys
 
+from dateutil.relativedelta import relativedelta
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -59,6 +61,7 @@ logging.basicConfig(filename="/botproject/log.txt", level=logging.ERROR)
 
 
 User = get_user_model()
+
 
 def is_digit(string):
     if string.isdigit():
@@ -99,52 +102,6 @@ class IndexCabinetView(TemplateView):
 class TestView(TemplateView):
     template_name = "testpay.html"
 
-
-class CloudpaymentsStatusView(APIView):
-
-    # permission_classes = (IsAuthenticated,)
-    http_method_names = ['post']
-
-    def post(self, request):
-
-        try:
-
-            print(request.body)
-            print(request.POST)
-
-            logging.error(str(request.body))
-
-            #data = json.loads(request.body)
-            #print(data)
-
-            return Response({"status": "OK"})
-
-        except Exception as e:
-
-            exc_type, exc_obj, exc_tb = sys.exc_info()
-            print("sys.exc_info() : ", sys.exc_info())
-            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(exc_type, fname, exc_tb.tb_lineno)
-            print(str(e))
-            logging.error("CloudpaymentsStatusView {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
-
-            data = {"status": "error",
-                    "description": "some error, pls contact support"}
-            return Response(data)
-
-# <QueryDict: {'TransactionId': ['174538442'], 'Amount': ['1.00'], 'Currency': ['RUB'], 'PaymentAmount': ['1.00'],
-# 'PaymentCurrency': ['RUB'], 'OperationType': ['Payment'], 'InvoiceId': ['1234567'], 'AccountId': ['user@example.com'],
-# 'SubscriptionId': ['sc_dc8c6cad671ab111b2dc28aa926a8'], 'Name': ['MOMENTUM R'], 'Email': ['orlan_mh94@mail.ru'],
-# 'DateTime': ['2019-07-20 11:33:45'], 'IpAddress': ['162.243.37.65'], 'IpCountry': ['US'], 'IpCity': ['New York'],
-# 'IpRegion': ['New York'], 'IpDistrict': ['New York'], 'IpLatitude': ['40.7143'], 'IpLongitude': ['-74.006'],
-# 'CardFirstSix': ['533669'], 'CardLastFour': ['7481'], 'CardType': ['MasterCard'], 'CardExpDate': ['08/21'],
-# 'Issuer': ['SBERBANK OF RUSSIA'], 'IssuerBankCountry': ['RU'], 'Description': ['Подписка на ежемесячный доступ к сайту example.com'],
-# 'AuthCode': ['210686'], 'Token': ['537155323'], 'TestMode': ['0'], 'Status': ['Completed'], 'GatewayName': ['Tinkoff'],
-# 'Data': ['{"cloudPayments":{"recurrent":{"interval":"Month","period":1,"customerReceipt":{"Items":[{"label":"Наименование товара 3",
-# "price":300,"quantity":3,"amount":900,"vat":20,"method":0,"object":0}],"taxationSystem":0,"email":"user@example.com",
-# "phone":"","isBso":false,"amounts":{"electronic":900,"advancePayment":0,"credit":0,"provision":0}}}}}'],
-# 'TotalFee': ['0.04'], 'CardProduct': ['MCS']}>
-#
 
 class BotListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -313,7 +270,7 @@ class BotUserView(generics.ListAPIView):
                 return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
             if not bot.podpiska_do:
-                return Response(None)
+                return Response(status=status.HTTP_403_FORBIDDEN)
 
             self.queryset = BotUser.objects.filter(bot=bot).order_by('id')
             self.serializer_class = BotUserSerializer
@@ -346,7 +303,7 @@ class AnalyticsView(APIView):
                 return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
             if not bot.podpiska_do:
-                return Response(None)
+                return Response(status=status.HTTP_403_FORBIDDEN)
 
             all_users_count = BotUser.objects.filter(bot=bot).count()
             d = datetime.today()
@@ -384,7 +341,7 @@ class CompaignListCreateView(generics.ListCreateAPIView):
             return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
         if not bot.podpiska_do:
-            return Response(None)
+            return Response(status=status.HTTP_403_FORBIDDEN)
 
         # Note the use of `get_queryset()` instead of `self.queryset`
         self.queryset = Compaign.objects.filter(bot=bot).order_by('id')
@@ -402,7 +359,7 @@ class CompaignListCreateView(generics.ListCreateAPIView):
                 return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
 
             if not bot.podpiska_do:
-                return Response(None)
+                return Response(status=status.HTTP_403_FORBIDDEN)
 
             self.serializer_class = CompaignCreateSerializer
             serializer = self.get_serializer(data=request.data)
@@ -423,6 +380,156 @@ class CompaignListCreateView(generics.ListCreateAPIView):
             logging.error("CompaignListCreateView create {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
             data = {"status": "error"}
             return Response(data)
+
+
+class TariffView(APIView):
+    permission_classes = (IsAuthenticated,)
+    http_method_names = ['get']
+
+    def get(self, request, bot_id):
+
+        try:
+
+            bot = Bot.objects.get(id=bot_id)
+
+            if bot.user.id != request.user.id:
+                return Response({"status": "Error"}, status=status.HTTP_400_BAD_REQUEST)
+
+            config = Config.objects.get()
+
+            resp = {}
+            resp['bot_id'] = bot.id
+            resp['description'] = f'Ежемесячная подписка на тариф Business к боту {bot.name}(id={bot.id}), inbot24.ru'
+            resp['amount'] = config.bot_price
+            resp['invoiceId'] = int(time() * 10000)
+            resp['accountId'] = bot.user.email
+            resp['podpiska_do'] = bot.str_podpiska_do
+
+            return Response(resp)
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(exc_type, fname, exc_tb.tb_lineno)
+            print(str(e))
+            logging.error("TariffView {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+            return Response({"code":0})
+
+
+class CloudpaymentsStatusView(APIView):
+
+    # permission_classes = (IsAuthenticated,)
+    http_method_names = ['post']
+
+    def post(self, request):
+
+        try:
+
+            print(request.body)
+            print(request.POST)
+
+            transaction_id = request.POST.get('TransactionId')
+            subscription_id = request.POST.get('SubscriptionId')
+            amount = request.POST.get('PaymentAmount')
+            currency = request.POST.get('Currency')
+            operation_type = request.POST.get('OperationType')
+            status = request.POST.get('Status')
+
+            if status != "Completed":
+                return Response({"code":0})
+
+            if operation_type != "Payment":
+                return Response({"code":0})
+
+            if currency != "RUB":
+                return Response({"code":0})
+
+            if 'Data' in request.POST:
+
+                data = json.loads(request.POST.get('Data'))
+
+                bot_id = data['bot_id']
+                interval = data['cloudPayments']['recurrent']['interval']
+                period = data['cloudPayments']['recurrent']['period']
+
+                if interval != "Month" and period != 1:
+                    return Response({"code":0})
+
+                bot = Bot.objects.get(id=bot_id)
+
+                subscription = Subscription.objects.create(subscription_id=subscription_id, bot=bot)
+
+            else:
+
+                subscription = Subscription.objects.get(subscription_id=subscription_id)
+                bot = subscription.bot
+
+            if bot.podpiska_do:
+                bot.podpiska_do += relativedelta(months=1)
+            else:
+                bot.podpiska_do = datetime.today() + relativedelta(months=1)
+
+            bot.save()
+
+            payment = Payment.objects.create(subscription=subscription,
+                                             transaction_id=transaction_id,
+                                             amount=amount)
+
+            logging.error(str(request.body))
+
+            bot = telebot.TeleBot(token="890499033:AAG183JrbxePeF8O3LNvBtL0_jmInmnBUfk")
+            bot.send_message(90127404, str(request.body))
+
+            return Response({"code":0})
+
+        except Exception as e:
+
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            print("sys.exc_info() : ", sys.exc_info())
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(exc_type, fname, exc_tb.tb_lineno)
+            print(str(e))
+            logging.error("CloudpaymentsStatusView {} {} {} \n {}".format(exc_type, fname, exc_tb.tb_lineno, str(e)))
+
+            return Response({"code":0})
+
+
+# <QueryDict: {'TransactionId': ['174538442'], 'Amount': ['1.00'], 'Currency': ['RUB'], 'PaymentAmount': ['1.00'],
+# 'PaymentCurrency': ['RUB'], 'OperationType': ['Payment'], 'InvoiceId': ['1234567'], 'AccountId': ['user@example.com'],
+# 'SubscriptionId': ['sc_dc8c6cad671ab111b2dc28aa926a8'], 'Name': ['MOMENTUM R'], 'Email': ['orlan_mh94@mail.ru'],
+# 'DateTime': ['2019-07-20 11:33:45'], 'IpAddress': ['162.243.37.65'], 'IpCountry': ['US'], 'IpCity': ['New York'],
+# 'IpRegion': ['New York'], 'IpDistrict': ['New York'], 'IpLatitude': ['40.7143'], 'IpLongitude': ['-74.006'],
+# 'CardFirstSix': ['533669'], 'CardLastFour': ['7481'], 'CardType': ['MasterCard'], 'CardExpDate': ['08/21'],
+# 'Issuer': ['SBERBANK OF RUSSIA'], 'IssuerBankCountry': ['RU'], 'Description': ['Подписка на ежемесячный доступ к сайту example.com'],
+# 'AuthCode': ['210686'], 'Token': ['537155323'], 'TestMode': ['0'], 'Status': ['Completed'], 'GatewayName': ['Tinkoff'],
+# 'Data': ['{"cloudPayments":{"recurrent":{"interval":"Month","period":1,"customerReceipt":{"Items":[{"label":"Наименование товара 3",
+# "price":300,"quantity":3,"amount":900,"vat":20,"method":0,"object":0}],"taxationSystem":0,"email":"user@example.com",
+# "phone":"","isBso":false,"amounts":{"electronic":900,"advancePayment":0,"credit":0,"provision":0}}}}}'],
+# 'TotalFee': ['0.04'], 'CardProduct': ['MCS']}>
+#
+
+# <QueryDict: {'TransactionId': ['175717749'], 'Amount': ['2.00'], 'Currency': ['RUB'], 'PaymentAmount': ['2.00'],
+# 'PaymentCurrency': ['RUB'], 'OperationType': ['Payment'], 'InvoiceId': ['1563797293'],
+# 'AccountId': ['user@qweasd.com'], 'SubscriptionId': ['sc_642872f8508c326d70fd9896d77d1'],
+# 'Name': ['MOMENTUM R'], 'Email': ['orlan_mh94@mail.ru'], 'DateTime': ['2019-07-22 19:01:54'], 'IpAddress': ['104.236.220.155'],
+# 'IpCountry': ['US'], 'IpCity': ['New York'], 'IpRegion': ['New York'], 'IpDistrict': ['New York'],
+# 'IpLatitude': ['40.7143'], 'IpLongitude': ['-74.006'], 'CardFirstSix': ['533669'], 'CardLastFour': ['7481'],
+# 'CardType': ['MasterCard'], 'CardExpDate': ['08/21'], 'Issuer': ['SBERBANK OF RUSSIA'], 'IssuerBankCountry': ['RU'],
+# 'Description': ['Подписка на ежемесячный доступ к боту id=114 (Название бота) inbot24.ru'], 'AuthCode': ['247502'],
+# 'Token': ['538008841'], 'TestMode': ['0'], 'Status': ['Completed'], 'GatewayName': ['Tinkoff'],
+# 'Data': ['{"bot_id":1,"cloudPayments":{"recurrent":{"interval":"Day","period":1}}}'], 'TotalFee': ['0.08'], 'CardProduct': ['MCS']}>
+
+
+#<QueryDict: {'TransactionId': ['175717749'], 'Amount': ['2.00'], 'Currency': ['RUB'], 'PaymentAmount': ['2.00'],
+# 'PaymentCurrency': ['RUB'], 'OperationType': ['Payment'], 'InvoiceId': ['1563797293'],
+# 'AccountId': ['user@qweasd.com'], 'SubscriptionId': ['sc_642872f8508c326d70fd9896d77d1'],
+# 'Name': ['MOMENTUM R'], 'Email': ['orlan_mh94@mail.ru'], 'DateTime': ['2019-07-22 19:01:54'], 'IpAddress': ['104.236.220.155'],
+# 'IpCountry': ['US'], 'IpCity': ['New York'], 'IpRegion': ['New York'], 'IpDistrict': ['New York'], 'IpLatitude': ['40.7143'],
+# 'IpLongitude': ['-74.006'], 'CardFirstSix': ['533669'], 'CardLastFour': ['7481'], 'CardType': ['MasterCard'], 'CardExpDate': ['08/21'], 'Issuer': ['SBERBANK OF RUSSIA'], 'IssuerBankCountry': ['RU'], 'Description': ['Подписка на ежемесячный доступ к боту id=114 (Название бота) inbot24.ru'], 'AuthCode': ['247502'], 'Token': ['538008841'], 'TestMode': ['0'], 'Status': ['Completed'], 'GatewayName': ['Tinkoff'], 'Data': ['{"bot_id":1,"cloudPayments":{"recurrent":{"interval":"Day","period":1}}}'], 'TotalFee': ['0.08'], 'CardProduct': ['MCS']}>
+
 
 
 #
