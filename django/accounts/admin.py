@@ -15,21 +15,23 @@ class AccountAdmin(UserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ( 'email', 'is_staff' )
-    list_filter = ( 'is_staff', 'is_superuser', 'is_active' )
-    search_fields = ( 'email', )
-    ordering = ( 'email', )
+    list_display = ('email', 'date_joined')
+    list_filter = ()
+    #list_filter = ( 'is_staff', 'is_superuser', 'is_active' )
+    search_fields = ('email',)
+    ordering = ('email',)
 
-    filter_horizontal = ( 'groups', 'user_permissions' )
+    # filter_horizontal = ('groups', 'user_permissions' )
 
     fieldsets = (
-        ( None, {'fields': ('email', 'password')} ),
+        #( None, {'fields': ('email', 'password')} ),
+        ( None, {'fields': ('email',)} ),
         # ( 'Персональная информация', {'fields': ('first_name',)} ),
-        ( 'Permissions', {'fields': ('is_active',
-                                     'is_staff',
-                                     'is_superuser',
-                                     'groups',
-                                     'user_permissions' )} ),
+        # ( 'Permissions', {'fields': ('is_active',
+        #                              'is_staff',
+        #                              'is_superuser',
+        #                              'groups',
+        #                              'user_permissions' )} ),
         ( 'Important dates', {'fields': ('last_login',)}),
     )
 
@@ -46,7 +48,7 @@ class AccountAdmin(UserAdmin):
 admin.site.register(User, AccountAdmin)
 # ... and, since we're not using Django's built-in permissions,
 # unregister the Group model from admin.
-admin.site.unregister(Group)
+# admin.site.unregister(Group)
 
 
 

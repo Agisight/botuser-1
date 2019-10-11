@@ -73,6 +73,8 @@ async def send_message(bot, user, mes):
                 caption = mes['caption'] if mes['caption'] else None
                 answer_tg_bot = await tg_bot.send_video(user['chat_id'], mes['video'], caption=caption)
 
+        print(answer_tg_bot)
+
     except Exception as e:
 
         exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -148,7 +150,11 @@ async def handle_next_screen(bot, user, next_screen_id, is_loop_check):
 
         is_loop_check += next_screen_id + "|"
 
+        print(new_screen['elements'])
+
         for element in new_screen['elements']:
+
+            print(element)
 
             if element['type'] == 'menu':
 
@@ -212,6 +218,8 @@ async def handle_next_element(bot, user, screen, element_id, is_loop_check):
             return None
 
         for element in screen['elements'][i+1:]:
+
+            print(element)
 
             if element['type'] == 'menu':
 

@@ -214,3 +214,96 @@ ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compa
  relation "bot_compaign" does not exist
 ERROR:root:check_compaign <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 80 
  relation "bot_compaign" does not exist
+ERROR:root:check_podpiska <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 79 
+ relation "bot_bot" does not exist
+ERROR:root:check_podpiska <class 'asyncpg.exceptions.UndefinedTableError'> compaign.py 79 
+ relation "bot_bot" does not exist
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> compaign.py 201 
+ Failed to get http url content
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> compaign.py 201 
+ Failed to get http url content
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> compaign.py 201 
+ Failed to get http url content
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.BadRequest'> compaign.py 208 
+ Wrong url host
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.BadRequest'> compaign.py 208 
+ Wrong url host
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5cf42a70b8>
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.WrongRemoteFileIdSpecified'> compaign.py 208 
+ Wrong remote file id specified: can't unserialize it. wrong last symbol
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.WrongRemoteFileIdSpecified'> compaign.py 208 
+ Wrong remote file id specified: wrong padding in the string
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> compaign.py 205 
+ Failed to get http url content
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 205 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 205 
+ Chat not found
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5cf428cb70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5cf4232048>
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.WrongRemoteFileIdSpecified'> compaign.py 208 
+ Wrong remote file id specified: wrong string length
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f426129af60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f42601261c8>, 3279437.935454145)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f426129aef0>
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 201 
+ Chat not found
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f233d641eb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f233c4d11c8>, 3282955.244331659)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f233d641e48>
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 208 
+ Chat not found
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.ChatNotFound'> compaign.py 208 
+ Chat not found
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f91da940f28>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f91cb7d6468>, 3283350.157611054)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f91da940eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fe354672e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fe3514fc828>, 3446041.432996086)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fe354672f28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5b20515a58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5b203cf768>, 3535505.895903254)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5b20515a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fae6715ee48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fae4ffd5708>, 3705607.32150491)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fae6715edd8>
+ERROR:root:compaign send_message <class 'aiogram.utils.exceptions.BotBlocked'> compaign.py 201 
+ Forbidden: bot was blocked by the user
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc78424ac88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc7840c1168>, 4842642.385661002)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc78424ae80>

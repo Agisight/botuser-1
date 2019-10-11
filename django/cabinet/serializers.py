@@ -54,8 +54,8 @@ class CompaignListSerializer(serializers.ModelSerializer):
 
 class CompaignCreateSerializer(serializers.ModelSerializer):
     # date_in = serializers.DatetimeField(format="%d.%m.%Y %H:%M")
-    status = serializers.CharField(source='get_status_display')
+    status = serializers.ReadOnlyField(source='get_status_display')
     id = serializers.ReadOnlyField()
     class Meta:
         model = Compaign
-        fields = ('id', 'bot', 'text', 'status', 'date_in', )
+        fields = ('id', 'bot', 'text', 'photo', 'video', 'status', 'date_in', )

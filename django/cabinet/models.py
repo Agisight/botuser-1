@@ -175,7 +175,7 @@ class Subscription(models.Model):
     date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.subscription_id
 
     class Meta:
         verbose_name = 'Подписка'
@@ -190,7 +190,7 @@ class Payment(models.Model):
     date_in = models.DateTimeField(auto_now_add=True, auto_now=False, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.transaction_id
 
     class Meta:
         verbose_name = 'Оплата'

@@ -13,7 +13,7 @@ async def init_db():
 async def new_compaign():
     print('new_compaign')
     async with pool.acquire() as conn:
-        result = await conn.fetch("SELECT * FROM cabinet_compaign WHERE is_done = FALSE limit 1")
+        result = await conn.fetch("SELECT * FROM cabinet_compaign WHERE status = 'created' limit 1")
         if result:
             return result[0]
         return result

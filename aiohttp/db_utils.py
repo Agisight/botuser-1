@@ -15,12 +15,12 @@ async def add_user(bot_id, chat_id, first_name, last_name, username):
     async with pool.acquire() as conn:
 
         query = "INSERT INTO cabinet_botuser " \
-                "(bot_id, chat_id, first_name, last_name, username, step, date_in) " \
+                "(bot_id, chat_id, first_name, last_name, username, step, otpiska, date_in) " \
                 "VALUES " \
-                "($1, $2, $3, $4, $5, $6, $7) " \
+                "($1, $2, $3, $4, $5, $6, $7, $8) " \
                 "RETURNING *"
 
-        result = await conn.fetch(query, bot_id, chat_id, first_name, last_name, username, None, datetime.today())
+        result = await conn.fetch(query, bot_id, chat_id, first_name, last_name, username, None, False, datetime.today())
 
         if result:
             return result[0]

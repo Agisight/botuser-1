@@ -15,28 +15,26 @@ class UserManager(BaseUserManager):
         if not email:
             raise ValueError('Не указан email адрес')
 
-        user = self.model(email = self.normalize_email(email))
+        user = self.model(email=self.normalize_email(email))
 
         user.set_password(password)
         user.save(using=self._db)
 
         return user
 
-    def create_superuser (self, email, password) :
+    def create_superuser(self, email, password):
         '''  '''
-        user = self.create_user(email, password = password)
-        user.is_admin = True
+        user = self.create_user(email, password=password)
         user.is_staff = True
         user.is_superuser = True
-        user.save( using = self._db )
+        user.save(using=self._db)
 
         return user
 
 
-class User(PermissionsMixin, AbstractBaseUser):
+class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length = 255, unique = True)
     is_active = models.BooleanField(default=True, verbose_name="Активный")
-    is_admin = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False, verbose_name="Сотрудник")
     date_joined = models.DateTimeField(auto_now_add=True, auto_now=False)
 

@@ -93,7 +93,7 @@ def random_id():
 
 
 class StandartPagination(PageNumberPagination):
-    page_size = 20
+    page_size = 1
 
 
 class IndexCabinetView(TemplateView):
@@ -398,12 +398,13 @@ class TariffView(APIView):
             config = Config.objects.get()
 
             resp = {}
+            resp['publicId'] = 'pk_4723424c8d96eeae24c35a2616045'
             resp['bot_id'] = bot.id
             resp['description'] = f'Ежемесячная подписка на тариф Business к боту {bot.name}(id={bot.id}), inbot24.ru'
             resp['amount'] = config.bot_price
             resp['invoiceId'] = int(time() * 10000)
             resp['accountId'] = bot.user.email
-            resp['podpiska_do'] = bot.str_podpiska_do
+            resp['podpiska_do'] = bot.str_podpiska_do if bot.podpiska_do else None
 
             return Response(resp)
 

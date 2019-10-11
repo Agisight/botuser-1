@@ -14,18 +14,18 @@
     var widget = new cp.CloudPayments();
 
     var data = {
-        bot_id: {bot_id}
+        bot_id: 112
     };
 
     data.cloudPayments = {recurrent: { interval: 'Month', period: 1}}; //создание ежемесячной подписки
 
     widget.charge({ // options
-        publicId: 'pk_7c46c71397f4579d81b068cd208bb', //id из личного кабинета
-        description: {description} //назначение
-        amount: {amount}, //сумма
+        publicId: 'pk_4723424c8d96eeae24c35a2616045', //id из личного кабинета
+        description: 'sdfsdf', //назначение
+        amount: 100, //сумма
         currency: 'RUB', //валюта
-        invoiceId: {invoiceId}, //номер заказа  (необязательно)
-        accountId: {accountId}, //идентификатор плательщика (обязательно для создания подписки)
+        invoiceId: '123123123', //номер заказа  (необязательно)
+        accountId: '23454354', //идентификатор плательщика (обязательно для создания подписки)
         data: data
     },
     function (options) { // success

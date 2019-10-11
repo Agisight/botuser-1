@@ -1,0 +1,3008 @@
+ERROR:root:handle_first_message <class 'TypeError'> server.py 602 
+ Object of type Message is not JSON serializable
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f4c350825f8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f4c34faf948>, 1299105.506678826)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f4c35082588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f4c35082898>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f4c34faf948>, 1299108.196627164)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f4c35082828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f4c350824e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f4c34fafb88>, 1299113.833726434)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f4c35082080>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 118 
+ local variable 'keyboard' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 221 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f1edc191908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f1edc0bd9a8>, 1299561.25033006)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f1edc191898>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 118 
+ local variable 'keyboard' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 221 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7717f8a7b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715080a68>, 1299765.757397523)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7717f8a748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7717f8a780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715080ca8>, 1299768.999408543)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7717f8a828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715159390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771507dbe8>, 1299773.032871536)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715159320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7717f8a2b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715080ee8>, 1299777.785083681)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7717f8a390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715082208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771507ddc8>, 1299778.229714106)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715082160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7717f8a630>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f77150320a8>, 1299785.388577667)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7717f8a7f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715028278>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771507dfa8>, 1299786.530854761)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715159668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77150272b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715080e88>, 1299787.487911534)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715027860>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7717f8a6a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715080a08>, 1299787.567348584)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7717f8a780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77151595f8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f77150301c8>, 1299794.795429778)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715082e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77151590b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771507df48>, 1300113.601074106)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715159048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f771c1c4a20>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7715038108>, 1300116.029040149)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f771c1c45f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715065898>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f77150383a8>, 1300254.071743643)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715065a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715028f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771c1d5dc8>, 1300264.303915622)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715028d68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715065748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f77150385e8>, 1300265.446637476)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715065a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f7715028940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f771c1d5528>, 1300266.209689929)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f7715028d68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbc096588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b29a8>, 1300499.841700582)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbc096518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbe6c8828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b1a08>, 1300502.07391379)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbe6c87b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbc096400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b2be8>, 1300503.787734413)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbc096048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbc096438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b2e28>, 1300503.887375419)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbc096668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbe6c8588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b1ca8>, 1300505.625205267)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbe6c85f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbc096400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf75f0a8>, 1300507.680777852)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbc096668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbc096048>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b2e88>, 1300507.833063948)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbc096978>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbe6c8518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b1f48>, 1300508.691727409)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbe6c85f8>
+ERROR:root:handle_current_step <class 'KeyError'> server.py 457 
+ 'fallback'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5daf748b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b29a8>, 1300513.983484884)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5daf748c50>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbe6c8860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5dbe6d71c8>, 1300544.434348351)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbe6c8588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5dbe6c8518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b1fa8>, 1300544.537925394)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5dbe6c85c0>
+ERROR:root:handle_current_step <class 'KeyError'> server.py 457 
+ 'fallback'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5daf749940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5daf7b1a08>, 1300753.766836961)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5daf7495f8>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 458 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830aa08>, 1301003.798085613)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83de518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83eb390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830e9a8>, 1301004.729015349)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83eb320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82f2828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830ebe8>, 1301004.829481809)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82f26a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830aca8>, 1301005.887557394)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83eb0f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830eee8>, 1301226.158220422)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83eb160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830afa8>, 1301244.452868242)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd5f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82f2f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5288>, 1301246.005941774)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82f2828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82ee860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7348>, 1301246.965060391)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82eebe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82eeda0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830adc8>, 1301247.059855319)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82eebe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82a9898>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830eb88>, 1301248.131965362)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a9da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12bd458c48>, 1301249.701400103)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd5c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82a9898>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5108>, 1301252.015492437)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a97f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b71c8>, 1301252.933292467)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd470>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82f2940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5468>, 1301253.620781619)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82f2da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7228>, 1301259.756668099)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd6d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82f2da0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b56a8>, 1301261.614054779)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82f2940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd6d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7708>, 1301262.516766524)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82f2eb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5948>, 1301264.067682808)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82f2940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7a08>, 1301275.891276336)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dd2e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c3c88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7d08>, 1301422.432931625)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c35c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9048>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82ce108>, 1301975.692637978)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c95f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c3710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5e28>, 1301976.881722424)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c36a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c36d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82ca048>, 1301976.971002035)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c3780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7e28>, 1301977.984459121)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c9828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c36a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b57c8>, 1301978.831048884)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c3748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c3a90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7708>, 1301980.067017702)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c3208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c3400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7108>, 1302039.958761513)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c32b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82bc0f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b51c8>, 1302041.377063257)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82bc1d0>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 458 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 458 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83de710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12bd457c48>, 1302076.945321741)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83de908>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83ddc88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830aac8>, 1302078.299336107)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dda58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dea20>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830eb28>, 1302079.900615167)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83ded30>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 458 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 458 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82a0630>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82c00a8>, 1302117.331852458)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a0860>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82d11c8>, 1302118.668298272)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c9c18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82a0128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82c0408>, 1302119.330446164)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a05c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82d13a8>, 1302123.829978512)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c9ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82a0a58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82c05e8>, 1302126.457907061)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a05c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82d15e8>, 1302127.317177884)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c9a58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82d14e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82c0828>, 1302128.286040482)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a07f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82d17c8>, 1302128.92044734)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c9eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82bdbe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12bd461b38>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82d1c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82c0a68>, 1302130.609286851)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82a0c18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd0b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12bd458be8>, 1302209.920917019)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83dda58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82bcc18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dee80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9a90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82d1a68>, 1302211.19522411)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c99b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82c9eb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b830eac8>, 1302211.291925351)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82c99b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83ddd68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7a08>, 1302212.180110316)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83ddcf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82d32e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b56a8>, 1302215.589988973)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82d3358>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83dd940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7f48>, 1302222.42975491)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83ddcf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82d3278>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5ca8>, 1302223.602403684)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82d3198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b83ddc88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7228>, 1302224.501221032)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b83ddcf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12b82d3198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b5168>, 1302225.839012549)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12b82d3278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12bd461828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f12b82b7d68>, 1302229.062527543)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f12bd4617f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b0400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeb28>, 1304752.40746118)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b0390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b35f8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeca8>, 1304753.986584662)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4093710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aee88>, 1304755.466775656)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093be0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4093b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058108>, 1304755.572638102)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40937b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b30b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aef48>, 1304756.472538883)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b02e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058228>, 1304758.883330253)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b0588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b30b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058228>, 1304760.007637092)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4055c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aefa8>, 1304761.324886411)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051f98>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aef48>, 1304763.23255668)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4051860>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4093b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fcb88>, 1304765.083362559)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093cc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4094550>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fbd08>, 1304765.94943225)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40949b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4093b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40583a8>, 1304767.451159955)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093a58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3278>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058288>, 1403767.449945286)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40932b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058528>, 1403768.534193537)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40938d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40580a8>, 1403768.646170005)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058468>, 1403770.217588792)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b30b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405f390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40588e8>, 1403771.309694334)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40932b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063ba8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058888>, 1477937.049985194)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40635c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40586a8>, 1477993.541857132)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3470>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058ac8>, 1478018.431458339)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3710>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058d08>, 1478019.397635838)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40634e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058e88>, 1478019.582665432)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058d68>, 1478019.607672006)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070dd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeb28>, 1478019.653715364)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4070d68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058c48>, 1478019.660132053)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40633c8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405fc50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeca8>, 1478019.729631754)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4093e10>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aefa8>, 1478020.265987774)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067780>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05f28>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40582e8>, 1478025.084131217)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a05c18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fbca8>, 1478025.164341957)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a05cc0>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c406eb38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073228>, 1478088.530879212)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406ea90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c406eb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073168>, 1478088.613833414)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406eac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05160>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40705c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e288>, 1498158.895505713)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4070f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e1c8>, 1498158.996475107)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4070f98>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 76 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 397 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40705c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c6438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058648>, 1811493.559092793)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c62e8>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 270 
+ 'NoneType' object has no attribute 'split'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079470>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeac8>, 1811532.52854584)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4079320>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058828>, 1811562.268604539)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4051b70>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070a58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e888>, 1811577.044100232)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4070550>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058e28>, 1811646.325205321)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40632b0>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a054a8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e408>, 1811794.106937387)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a053c8>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 372 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073648>, 1811858.164123914)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40733a8>, 1811858.25688617)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3080>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 161 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b3208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40737c8>, 1811895.458674486)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b36d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b36a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073b28>, 1811895.547742644)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3a20>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 161 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073f48>, 1811903.6135697)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c6908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7d2648>, 1811904.534298394)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c6898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c68d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7d2528>, 1811904.630499095)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c6978>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40518d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063a58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073fa8>, 1811904.856763393)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5400>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4077ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073b88>, 1811904.937450528)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3198>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 161 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40739a8>, 1812070.758494605)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073ac8>, 1812070.836941212)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063e48>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 161 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070438>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05a58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405fdd8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c64a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c6828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d86a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d8cc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406ee88>, 1812348.374218216)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7d8ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c68d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e2e8>, 1812348.455216749)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c6fd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063ba8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40588e8>, 1812356.149661656)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40630b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058ee8>, 1812356.263641529)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405f7b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e708>, 1812567.828698602)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c405f358>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405f7f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fcc48>, 1812567.914391534)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c405f4e0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058228>, 1812573.173815274)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058648>, 1812577.857543747)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40639b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40589a8>, 1812616.453777227)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063ba8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40586a8>, 1812616.530201787)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067eb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc048>, 1812620.436748976)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c55c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c41c8>, 1812622.372725854)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c55c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c43a8>, 1812622.45668496)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067cc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc228>, 1812625.584711844)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cbd30>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c45e8>, 1812626.903640588)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a056d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cbd30>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40583a8>, 1812627.015507867)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a056d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c07f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc468>, 1812628.398281038)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c07f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc1c8>, 1812628.491128481)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5a20>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073588>, 1812630.889439463)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5ef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5dd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40735e8>, 1812630.97685105)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0c88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc828>, 1812633.356136883)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0a20>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dca08>, 1812633.446041401)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc2e8>, 1812861.896999873)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058648>, 1812862.003848175)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0c88>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c406ecf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073ac8>, 1812868.046609699)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406ec50>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0c18>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e828>, 1812871.139737774)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40519e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073d68>, 1812872.970183231)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406efd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40511d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073828>, 1812873.054896575)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406efd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406ef48>, 1812879.59734629)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0c50>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063f98>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073ee8>, 1812880.621347666)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc5e8>, 1812884.055445753)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a05da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c42e8>, 1813045.86305611)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40634a8>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 161 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40674a8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc888>, 1813072.78883395)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40676a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40670b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc948>, 1813072.911432984)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4b88>, 1813077.276802883)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40630b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4a68>, 1813077.407993214)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40630b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40675c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc648>, 1813099.049629008)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051cf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4f48>, 1813100.229982309)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4051f60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40676a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dcb28>, 1813102.403718789)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40675c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc468>, 1813102.486648754)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40670b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05ac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4077be0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4f48>, 1813106.209797521)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40519e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c6780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dcee8>, 1813288.04378763)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c00b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4051160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40739a8>, 1813289.771521122)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40513c8>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d3e80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e6408>, 1813618.872614017)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7d3e10>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c6d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dcd08>, 1813618.976074109)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c6f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c40670b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073648>, 1813912.443531686)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067a58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c55c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073768>, 1813912.531790123)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4055e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e8e8>, 1813917.139772268)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4055b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058b88>, 1813917.227536806)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058c48>, 1813919.771740137)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c57f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cb0b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058fa8>, 1813919.847738319)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5b00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b02e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeb88>, 1813924.70340355)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b0550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c57b00b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40aeca8>, 1813924.788252015)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b0550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cb0b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058e28>, 1813986.446958905)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c57f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a054e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e60a8>, 1813989.047405992)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b0438>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cb748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058168>, 1813993.265764926)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7cbe48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a054e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e6288>, 1813995.00460565)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a05b70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e6168>, 1813995.08157734)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a057b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406efa8>, 1814220.321795238)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e348>, 1814220.403604445)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055e48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073768>, 1814243.564701255)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40677b8>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4948>, 1814358.582055654)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5f60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d8550>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e61c8>, 1814365.438112882)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7e8358>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05be0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058288>, 1814390.400498197)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406eeb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058c48>, 1814390.48370104)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406eeb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e8e8>, 1814397.188762108)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4070710>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a056d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058648>, 1814938.768787535)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a056d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058168>, 1814938.93069831)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c57b3630>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a05e80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc588>, 1814941.181050298)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a05400>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a059b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc168>, 1814941.28767214)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c9a054e0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7dc438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7e4648>, 1814944.406934045)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7dc518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7cb940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7dc5c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4058168>, 1814944.507569664)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7dc048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d3128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc7c8>, 1827318.246436677)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7d3630>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 304 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d8be0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7d3fd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4070fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dcca8>, 2072021.441296581)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40704a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fbca8>, 2072031.692366098)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7cbe80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067c18>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc948>, 2231132.81179889)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073fa8>, 2231135.835405664)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4051198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073e28>, 2231135.921441419)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4051198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dc0a8>, 2231141.181462689)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c40670b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073888>, 2231148.865143067)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067f28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4055b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7dcbe8>, 2231150.735353046)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4067ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073ac8>, 2231206.626675091)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7e8780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e408>, 2231266.254074694)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4055780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7e8f28>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e228>, 2238870.612226063)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7e8c88>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4077eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7ed320>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c4073dc8>, 2238874.250354791)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7ed198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40735e8>, 2238874.332761252)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c0978>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7e8c88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406ee88>, 2238880.520301689)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7e8f28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4063400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c99fbe88>, 2238884.963645634)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4063dd8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7e8f28>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e7c8>, 2238886.869682204)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7e8c88>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4079c18>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e768>, 2239434.393214133)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c4079518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4768>, 2239440.117811361)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c57b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c9a057b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4c48>, 2239440.323443959)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9c406e4e0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7ec7f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c406e168>, 2239475.663343714)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7ec5f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c5e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9be7c4d68>, 2239480.873343601)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7c5320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7e8c88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fb9c40588e8>, 2239486.217392191)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb9be7e8780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c405f828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c4067470>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9be7c0940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb9c406ea90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f13558d1ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f134a761588>, 3278659.500762223)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f13558d1e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f13558f82e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f134a763768>, 3278660.854121226)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f13558f8278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f134a76b828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f134a7618e8>, 3278661.807402282)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f134a7a2e48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f134a76b828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f134a761b88>, 3278661.921209493)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f134a7a2da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc692341b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c1dabe8>, 3535427.189715611)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc692341ac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc692342b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c1e0be8>, 3535429.490554889)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc692342828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc68c23f668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c1dae28>, 3535434.765463265)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc68c23ff60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc692342d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c1e0e88>, 3535437.386868126)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc692342d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc68c23fef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c2040a8>, 3535440.293937403)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc68c23ff60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc68c18a860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c204048>, 3699551.028918725)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc68c18a7f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc68c190198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fc68c1931c8>, 3699556.280329998)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fc68c190128>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc68c18a940>
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (9, 90127404, Pete, Roman, peteroman, null, 2019-08-01 09:45:13.27527+00, 117, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (10, 90127404, Pete, Roman, peteroman, null, 2019-08-01 09:45:18.642011+00, 117, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (11, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:06:18.044246+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (12, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:06:54.273783+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (13, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:08:27.836502+00, 112, null).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77043e72e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7704303ac8>, 3705603.975800967)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f77043e76d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77042e7ac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7704303d68>, 3705604.089041765)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f77042e7b70>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (14, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:11:06.096815+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (15, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:11:28.130131+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (16, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:13:06.325206+00, 112, null).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f77042e7a90>
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (17, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:13:12.209032+00, 112, null).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f770b463f28>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7704302d08>, 3705792.117827358)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f770b463828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f770b463828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f7704302e28>, 3705792.215050397)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f770b463f28>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (18, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:14.391115+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (19, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:55.637677+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (20, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:56.480072+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (21, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:56.586917+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (22, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:56.757407+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (23, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:14:56.989148+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (24, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:15:49.411058+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (25, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:17:03.545905+00, 112, null).
+ERROR:root:webhook <class 'asyncpg.exceptions.NotNullViolationError'> server.py 458 
+ null value in column "otpiska" violates not-null constraint
+DETAIL:  Failing row contains (26, 457399422, Grey, Skraylet, Skraylet, null, 2019-08-01 10:17:37.607603+00, 112, null).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f770b4636d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bda90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378528>, 3706792.694440002)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bde80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bda58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3787c8>, 3706792.788898023)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdeb8>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bde48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378528>, 3706832.415201846)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bda90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdd68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3787c8>, 3706832.512584712)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdeb8>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bda90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c329710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1768>, 3709628.047719624)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c329390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c9e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1408>, 3709628.162521349)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38ccf8>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd3c8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f888>, 3961712.748389777)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd358>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bde80>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d3da0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d15e8>, 3973444.349468213)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3cf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd1d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f168>, 3973448.343252289)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d3a20>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516ee8>, 3973457.899532584)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d38d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdc88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f348>, 3973463.769927768)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d38d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516d68>, 3973468.054259925)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378828>, 3973589.350349971)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fcf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378a68>, 3974462.518767195)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f9b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b828>, 3974465.448795236)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd5c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1468>, 3974500.004776821)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd1d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd2e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32ba08>, 3974530.181661192)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd5c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1528>, 3974531.929521813)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bca8>, 3974532.955960705)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdb38>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33ceb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1588>, 3975667.208806819)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33c2b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c320>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f1c8>, 3975668.765192772)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c0b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516f48>, 3975669.737218104)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cbe0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f9a8>, 3975672.470440605)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c4e0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378a68>, 3976035.860782166)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdb00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f7c8>, 3976037.576420713)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f7b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d3da0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b768>, 3976039.437653695)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd4a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f7b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f5e8>, 3976040.196773076)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d3da0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b888>, 3976043.041171832)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3f60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fdc8>, 3976044.403199398)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f7b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516e88>, 3976049.538403476)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c34d048>, 3976050.567395515)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bee8>, 3976051.673215944)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38cbe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516dc8>, 3976052.633171032)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f7b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c1d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347108>, 3976053.634011188)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38ccc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f5c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fbe8>, 3976054.558813228)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f1c8>, 4341366.461256404)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f0b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cfd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f7c8>, 4840920.256691871)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c2b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fe48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347468>, 4840945.500228859)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c337390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1588>, 4841023.268602275)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c337208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c349ac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347708>, 4841029.93437607)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d12e8>, 4841352.701846608)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd3c8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378468>, 4841373.214994585)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1708>, 4841450.179072865)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd3c8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378768>, 4841452.318561502)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f2e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378948>, 4841455.120513694)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdc88>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd358>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354048>, 4841455.247279907)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdf60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c828>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32ba08>, 4841477.583045622)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c470>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd358>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378948>, 4841486.325354996)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516e88>, 4841491.294426321)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f908>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd6d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516a68>, 4841491.380570384)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdb70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bda58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f588>, 4841498.716923902)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdcf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3471c8>, 4841514.484577831)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdb70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdcf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fa08>, 4841520.080498183)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bda58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328f60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3472e8>, 4841525.942452735)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f828>, 4841531.124265623)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd9b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3dad68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f648>, 4841704.714811718)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3dabe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347a08>, 4841741.449432023)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fa90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3543a8>, 4841748.400780091)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cdcc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fe10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347ca8>, 4841751.959038855)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f7f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f9e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354588>, 4841764.664843491)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cdc50>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1708>, 4841959.203664033)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c34dcf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516dc8>, 4841962.090965232)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33ffd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33c7f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378a68>, 4841987.922525651)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33ca58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33feb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516ca8>, 4841989.96183049)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33ffd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33cbe0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378948>, 4841991.626860128)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33c898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3401d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354108>, 4841993.334784874)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fb38>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3401d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516e88>, 4841993.468476266)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f9b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522e10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bf48>, 4842011.179149438)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33ca58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fa90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fa68>, 4842012.494687083)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f630>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522ac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32be88>, 4842013.829490532)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33cb00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f5c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f108>, 4842014.949917139)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33feb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3786a8>, 4842015.045235469)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa052c6e5c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33ca58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bfa8>, 4842017.325561816)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33cbe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33cef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b768>, 4842017.412955964)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33cbe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534d3c18>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3479a8>, 4842049.513351914)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354588>, 4842056.67631812)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328c18>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347888>, 4842063.1031081)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38cef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fe48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3542e8>, 4842065.545549503)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd358>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328dd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347ee8>, 4842070.537446716)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38cef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c550>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347408>, 4842273.023833096)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fdd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d16a8>, 4849826.193927634)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f0f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3527b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347048>, 4849839.322985906)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352860>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c349438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354b28>, 4849843.381832663)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cdb00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c1d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b9a8>, 4849844.785702081)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cf98>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354d08>, 4849849.940054345)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c8d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b828>, 4849851.281890688)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38cda0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2db4e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd168>, 4855285.206867763)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2db518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354f48>, 4948851.212627392)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd978>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c898>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378468>, 4948856.745869074)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38ccc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cdcc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3786a8>, 4948859.3674428)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd4a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516a68>, 4948862.463697913)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c908>
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 268 
+ 'NoneType' object has no attribute 'split'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f630>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354288>, 4998575.33051375)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33ffd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354ca8>, 4998575.491178937)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fb00>
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 268 
+ 'NoneType' object has no attribute 'split'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378648>, 4998601.336240661)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378fa8>, 4998601.468333636)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fb70>
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 370 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 268 
+ 'NoneType' object has no attribute 'split'
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 268 
+ 'NoneType' object has no attribute 'split'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e2278>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f1c8>, 5255381.066470427)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e2208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2deeb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1588>, 5255467.457359759)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2dee48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c329cf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f468>, 5255489.174257653)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c329dd8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3529e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b7c8>, 5255501.047523535)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352dd8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32be28>, 5255502.543554441)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0505def98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d940>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bdc8>, 5255503.594947227)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0505def98>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 67 
+ Failed to get http url content
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c329c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3784c8>, 5255623.23226143)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c329fd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347dc8>, 5255634.796620142)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3549a8>, 5255635.885837059)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c340668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdb70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347ca8>, 5255722.830246666)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354168>, 5255724.850086177)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c340898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdf60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347ee8>, 5255726.923752474)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534d3c18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fdd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354588>, 5255881.702625851)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3408d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d710>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cd68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3348>, 5255883.315426892)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38ca58>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354d68>, 5255884.774855959)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3470a8>, 5255913.965022378)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354ee8>, 5255917.158077706)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fa58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1408>, 5255917.248701363)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fcc0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516ca8>, 5255917.342937898)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f128>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.WrongFileIdentifier'> server.py 67 
+ Wrong file identifier/http url specified
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38ca58>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b828>, 5255918.675409541)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c8d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b9a8>, 5255943.64382318)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c400>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bdc8>, 5255943.739792182)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa05343a278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34dd30>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bee8>, 5255943.832470917)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa05343a278>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.WrongFileIdentifier'> server.py 67 
+ Wrong file identifier/http url specified
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd048>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f5e8>, 5255969.852259179)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdd68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f6a8>, 5255969.96459926)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f108>, 5255970.073483449)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd898>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.WrongFileIdentifier'> server.py 67 
+ Wrong file identifier/http url specified
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1400>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd5e8>, 5257938.749890641)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f1390>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c352b70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3228>, 5257967.531773755)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352b00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f17f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2ddbe8>, 5257984.772985429)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f1748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38cd30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c352b00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378588>, 5257988.952235235)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352b70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2dbd68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1e10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f348>, 5257997.913373309)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f1438>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2defd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32bdc8>, 5257999.738027677)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2deda0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b6a8>, 5257999.839767525)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa053522ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522e80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b9a8>, 5257999.931326067)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa053522ac8>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.WrongFileIdentifier'> server.py 67 
+ Wrong file identifier/http url specified
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33c470>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3479a8>, 5340366.975657397)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33ca90>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c349128>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3288>, 5340591.2377779)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c349da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2db6d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3548e8>, 5340592.420951196)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2db668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522f28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c349438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1168>, 5340627.732093265)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3494e0>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38ce48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347e28>, 5340632.824311016)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c668>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c38c2b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378a68>, 5641037.994858834)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c588>
+ERROR:root:handle_current_step <class 'AttributeError'> server.py 268 
+ 'NoneType' object has no attribute 'split'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f048>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b6a8>, 5947103.206107442)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fe48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f630>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378ee8>, 5947103.371175289)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd2e8>, 5947114.066073629)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f0f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f0f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd528>, 5947114.1817202)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c349a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2de9b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516ee8>, 5947116.524056526)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2deb00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2de048>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e33a8>, 5947116.638621367)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2dee48>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3daf60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dda08>, 5947302.259067114)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3dad30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3dae48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd9a8>, 5947302.35081759)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3daf60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2deeb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3588>, 5947319.193148444)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33fd68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2deeb8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa053516ee8>, 5947319.396213773)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f5c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd1c8>, 5947328.275587706)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f6a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f0f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3786a8>, 5947328.409945727)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e5b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378468>, 5947348.535632333)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e5048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e5b00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b9a8>, 5947348.651682465)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e5be0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2ff1d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354768>, 5947509.310412552)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2ff748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2ff748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32f588>, 5947509.394665668)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2ff1d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e5860>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347468>, 5947512.615808622)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e5eb8>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34df60>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3479a8>, 5947638.399680419)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c34dda0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa0534d1708>, 5947638.498393539)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c34ddd8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd6d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2ddb88>, 5947641.428740645)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd940>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2ddb28>, 5947686.739659407)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cdf60>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cdd68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dddc8>, 5947686.822161995)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cdc50>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd1d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e30a8>, 5947689.425497021)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c349c88>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c349390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3a08>, 5947757.218013287)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3494a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1358>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2ddfa8>, 5947760.879917829)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f15c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd0f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3ca8>, 5947818.633838852)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bd630>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e51d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd4a8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3f48>, 5947818.837889866)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534bdb70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3045c0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2f52e8>, 5947822.156886811)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f1d68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f6470>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3be8>, 5947826.498844536)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f6a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f6390>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3ee8>, 5947826.587815038)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f6160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33fac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534cd828>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c304b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2f55e8>, 5947830.888695728)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c304780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328c50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3888>, 5947842.937399048)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c328f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3108>, 5947843.029221306)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c328b00>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3378d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd7c8>, 5947846.418871849)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa0534cd278>
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 159 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328ef0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347648>, 5947869.483912172)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c328f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c328b00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c3477c8>, 5947869.596379999)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c328f98>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1ac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd9a8>, 5947871.880591428)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c346d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd888>, 5947872.006645257)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c346d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c352d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347828>, 5947879.129416089)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352cf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c352fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378a68>, 5947879.58713429)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c352cf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e2240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c354d68>, 5947922.525251378)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e2400>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e2e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fd68>, 5947922.662753961)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e2ef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34de10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32b6a8>, 5947924.51745767)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c34d240>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3dae48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32ffa8>, 5947926.133503863)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c3dada0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3dada0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378588>, 5947926.263535782)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33feb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c340748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32fa08>, 5947926.350708624)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2db940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c34d240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c32be28>, 5947929.652958544)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f66a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bd8d0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2f5228>, 5975618.883525155)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c4a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa0534bdd68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2f5348>, 5975619.012637475)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c38c908>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c3378d0>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 395 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e57f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2f9228>, 6383229.777145994)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e57b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2f1780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd528>, 6383237.218025381)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2f1940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378588>, 6383240.58628773)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c33f2b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c347408>, 6383240.671927652)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f518>
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 302 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c2e5780>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c378b88>, 6383309.413096482)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c2e5940>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa04c304240>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2dd7c8>, 6383506.289165166)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c304320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa053522588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa04c2e3888>, 6507256.633363952)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa04c33f2b0>
+ERROR:root:webhook <class 'TypeError'> server.py 419 
+ list indices must be integers or slices, not str
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5e0358>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5483048>, 453031.036062154)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5e02e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5de4a8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5474f48>, 453036.951007586)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5de438>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5e0208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5483108>, 453047.300964723)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5e0198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5de5f8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5418108>, 453050.457853954)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5de588>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5e0080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5483408>, 453052.487504578)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5e0278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd6ec5de358>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fd6e5418348>, 453053.818709339)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fd6ec5de470>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545e3c9908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f54585785e8>, 962809.576405139)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e22e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545e3c9908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545857f9a8>, 962816.945555039)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2710>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2550>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578b28>, 962824.325493714)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2358>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e26a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545857f828>, 962830.125321133)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578d68>, 962928.17576507)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e26a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545857fd68>, 962933.233843171)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458524048>, 962935.157884508)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e25c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2320>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545857ffa8>, 962998.330298876)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e22b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2710>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545f6d7288>, 963000.74872793)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545f6e2320>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545f6d7648>, 963004.042560734)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6e2400>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545858b668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578dc8>, 963152.567766283)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545858b278>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.NetworkError'> server.py 60 
+ Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 370 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'aiogram.utils.exceptions.NetworkError'> server.py 60 
+ Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 370 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5458520a90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545852e0a8>, 1028248.382745408)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5458520a20>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545852e6a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545852d648>, 1028256.924508373)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545852e630>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5458520e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545852e648>, 1028266.57864261)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5458520d30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545858b080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545852e748>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578888>, 1028268.138613199)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545852e780>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545852e7f0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578948>, 1028268.259603174)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545852e6a0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f54585b7e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f5458578e88>, 1028268.383583799)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545f6d1f60>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 67 
+ Failed to get http url content
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 176 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545858de80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f545852dfd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545857ff48>, 1074910.751227893)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f545852d470>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5458583b00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545852db28>, 1074956.79541436)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5458583eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5458520f98>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f545f6d7168>, 1074958.179991815)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f5458520eb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f54585b7e80>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f9f68e8d160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f9f5dd0ebe8>, 1075153.584698085)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f9f68e8d0f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f9f68e8c208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f9f5dd0cb28>, 1075154.755705535)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f9f68e8c198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa17ee3eb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa1784f3ac8>, 1075471.085827724)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa1785cb080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa17ee3f978>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa1784f3b88>, 1075479.811330474)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa17ee4eeb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa178500e80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa1784f3c48>, 1075500.858993695)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa178500cf8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa17ee4ee80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fa1784f3d08>, 1075502.815730923)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fa17ee4eeb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdf98>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029860b88>, 1075652.137532381)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdf28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdda0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861b88>, 1075653.128997303)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdd30>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02986ee10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029860e28>, 1075705.733295388)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdfd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02986ee10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029860a08>, 1075705.828201177)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdfd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02986ee10>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029860e88>, 1075705.967325843)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdef0>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.WrongFileIdentifier'> server.py 67 
+ Wrong file identifier/http url specified
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 182 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdb38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b0dc8>, 1934674.324201142)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd9e8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdb00>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b0d08>, 1934674.429430793)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdc88>
+ERROR:root:send_message <class 'aiogram.utils.exceptions.InvalidHTTPUrlContent'> server.py 74 
+ Failed to get http url content
+ERROR:root:handle_first_message <class 'UnboundLocalError'> server.py 403 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bd6d8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309f4e88>, 2707105.780713507)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd4a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fdc50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980c648>, 2707107.935452114)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297fdbe0>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bd080>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309f4ca8>, 2707145.842146137)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd048>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029817a90>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980c828>, 2707146.093523932)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029817b38>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861be8>, 2707150.902631438)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd278>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298170b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980cbe8>, 2707211.03961348)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029817ba8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02980e2b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815168>, 2707229.33386091)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309b11d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029817d68>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980ce88>, 2707288.263266269)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029817550>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02980e7b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815408>, 2707296.406808782)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309b1320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fdc18>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029817da0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298220b8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980c228>, 2707393.242096362)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029822668>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bd2b0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02980eb70>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0298155e8>, 2707394.26153685)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02980ec18>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fc4e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b0588>, 2707860.895356005)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297fc550>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298186a0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815408>, 2708204.921136882)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029818710>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029831668>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029820468>, 2708209.10236709)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0298315f8>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029818e48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0298158e8>, 2708212.624558112)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029818d68>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bd518>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309b1208>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981e518>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815ca8>, 2708884.989989736)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02981ecf8>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029818208>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861e88>, 2763425.672657722)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0298188d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298175f8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fd0b8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029822128>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029831630>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297bb278>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029822dd8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b1828>, 2763428.489678202)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029822f60>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309b1fd0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815348>, 2763435.060936637)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309b1c50>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309b1b38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815be8>, 2763558.126870718)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309b15c0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298174e0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980cd68>, 2763561.477262077)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029817198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bd2e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815d08>, 2763601.457671708)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd0b8>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981e4a8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029818198>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdeb8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029824908>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02982dbe8>, 2764033.219498017)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029824898>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029819198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029820ee8>, 2764056.580966868)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029819cc0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029824ac8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309f4dc8>, 2764084.13674197)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029824ef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fc198>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029815708>, 2765491.094235563)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02980ebe0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029819da0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0298203a8>, 2765492.490552044)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0298192b0>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bdcf8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861a68>, 2765495.847349225)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bdf28>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297b9438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029820288>, 2765498.615426068)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297b9320>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fc470>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861ee8>, 2765590.487751556)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297fc160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02986eef0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297fdac8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff029819c88>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297b9438>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029820fa8>, 2765592.550510003)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297b9048>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309bde80>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309f4e28>, 2765595.295768292)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309b1be0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297bb9e8>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029820528>, 2765597.045878298)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297bbfd0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981ee48>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b0588>, 2785505.430332127)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02981e860>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0298192b0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980ce88>, 2785518.804542045)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0309bd7f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981eb38>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02982d3a8>, 2785611.924757844)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02981ee80>
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_next_screen <class 'UnboundLocalError'> server.py 165 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:send_message <class 'UnboundLocalError'> server.py 76 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:root:handle_current_step <class 'UnboundLocalError'> server.py 310 
+ local variable 'answer_tg_bot' referenced before assignment
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981e160>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0297ba160>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff029861f48>, 3054390.88450782)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff0297ba1d0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309adc88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980c648>, 3054398.788462292)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029819b70>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff02981e588>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff0309b0228>, 3054401.101450096)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff02981e0f0>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff0309adc88>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7ff02980cb88>, 3054405.432080185)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7ff029819400>
